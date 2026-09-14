@@ -1,0 +1,71 @@
+(.venv) PS D:FilePath\HopSense> python src\analyze_results.py
+======================================================================
+Analysis of 100 questions
+======================================================================
+Both correct:       34  (34%)
+HopSense only:      24  (24%)  ← HopSense wins
+Naive only:          6  (6%)  ← Naive wins
+Both wrong:         36  (36%)
+
+
+──────────────────────────────────────────────────────────────────────
+Contains-gold accuracy by HotpotQA question type
+──────────────────────────────────────────────────────────────────────
+  bridge                n= 79  naive=33%  hopsense=57%
+  comparison            n= 21  naive=67%  hopsense=62%
+
+──────────────────────────────────────────────────────────────────────
+HopSense confidence calibration (is high conf = correct?)
+──────────────────────────────────────────────────────────────────────
+  conf [0.00, 0.50)  n= 20  correct=  4  accuracy=20%
+  conf [0.50, 0.70)  n=  4  correct=  3  accuracy=75%
+  conf [0.70, 0.90)  n=  4  correct=  2  accuracy=50%
+  conf [0.90, 1.01)  n= 72  correct= 49  accuracy=68%
+
+──────────────────────────────────────────────────────────────────────
+Sample: Naive wins (naive right, HopSense wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: What is the name for the adventure in "Tunnels and Trolls", a game designed by Ken St. Andre?
+Gold: Arena of Khazan
+Naive: Arena of Khazan  ✓
+HopSense: UNKNOWN  ✗  (conf=0.00)
+Sub-questions HopSense used:
+    - What is 'Tunnels and Trolls'?
+    - Who is Ken St. Andre?
+    - What is the name of the adventure designed by Ken St. Andre for 'Tunnels and Trolls'?
+
+Q: What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?
+Gold: Ann
+Naive: Ann  ✓
+HopSense: UNKNOWN  ✗  (conf=0.00)
+Sub-questions HopSense used:
+    - Who plays Bobbi Bacha in Suburban Madness?
+    - What is the middle name of the actress identified in the first question?
+
+Q: When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?
+Gold: April 1, 1949
+Naive: April 1, 1949  ✓
+HopSense: 1960  ✗  (conf=1.00)
+Sub-questions HopSense used:
+    - Who is the American lawyer, lobbyist, and political consultant that was a senior member of Donald Trump's presidential campaign?
+    - What year was this individual born?
+
+──────────────────────────────────────────────────────────────────────
+Sample: HopSense wins (HopSense right, Naive wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?
+Gold: Chief of Protocol
+Naive: UNKNOWN  ✗
+HopSense: United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States  ✓  (conf=1.00)
+
+Q: Who is older, Annie Morton or Terry Richardson?
+Gold: Terry Richardson
+Naive: UNKNOWN  ✗
+HopSense: Terry Richardson  ✓  (conf=1.00)
+
+Q: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former NewYork Police detective?
+Gold: 1999
+Naive: UNKNOWN  ✗
+HopSense: 1999  ✓  (conf=1.00)
