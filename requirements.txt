@@ -1,0 +1,11 @@
+numpy
+pandas
+langchain
+langchain-openai
+langchain-community
+langgraph
+faiss-cpu
+sentence-transformers
+datasets
+python-dotenv
+pydantic
