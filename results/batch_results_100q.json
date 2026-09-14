@@ -1,0 +1,4855 @@
+[
+  {
+    "id": "5a8b57f25542995d1e6f1371",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.89,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the nationality of Scott Derrickson?",
+        "What is the nationality of Ed Wood?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the nationality of Scott Derrickson?",
+          "answer": "American",
+          "confidence": 1.0,
+          "sources": [
+            "Scott Derrickson"
+          ]
+        },
+        {
+          "sub_q": "What is the nationality of Ed Wood?",
+          "answer": "American",
+          "confidence": 1.0,
+          "sources": [
+            "Ed Wood"
+          ]
+        }
+      ],
+      "time_sec": 4.24,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8c7595554299585d9e36b6",
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "gold_answer": "Chief of Protocol",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who portrayed Corliss Archer in the film Kiss and Tell?",
+        "What government position did that actress hold?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who portrayed Corliss Archer in the film Kiss and Tell?",
+          "answer": "Shirley Temple",
+          "confidence": 1.0,
+          "sources": [
+            "Kiss and Tell (1945 film)"
+          ]
+        },
+        {
+          "sub_q": "What government position did that actress hold?",
+          "answer": "United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States",
+          "confidence": 1.0,
+          "sources": [
+            "Shirley Temple"
+          ]
+        }
+      ],
+      "time_sec": 4.61,
+      "error": null
+    }
+  },
+  {
+    "id": "5a85ea095542994775f606a8",
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "gold_answer": "Animorphs",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Animorphs",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.14,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Animorphs",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.8,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the science fantasy young adult series told in first person?",
+        "What are the companion books associated with this series?",
+        "What themes do the companion books explore regarding enslaved worlds and alien species?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the science fantasy young adult series told in first person?",
+          "answer": "Animorphs",
+          "confidence": 1.0,
+          "sources": [
+            "Animorphs"
+          ]
+        },
+        {
+          "sub_q": "What are the companion books associated with this series?",
+          "answer": "The Seer And The Sword, The Healer's Keep, The Light Of The Oracle",
+          "confidence": 1.0,
+          "sources": [
+            "Victoria Hanley"
+          ]
+        },
+        {
+          "sub_q": "What themes do the companion books explore regarding enslaved worlds and alien species?",
+          "answer": "The themes explored include horror, war, dehumanization, morality, and freedom, particularly in the context of the Hork-Bajir being enslaved by the Yeerks.",
+          "confidence": 0.8,
+          "sources": [
+            "The Hork-Bajir Chronicles",
+            "Animorphs"
+          ]
+        }
+      ],
+      "time_sec": 6.36,
+      "error": null
+    }
+  },
+  {
+    "id": "5adbf0a255429947ff17385a",
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.2,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is the Laleli Mosque located?",
+        "Where is the Esma Sultan Mansion located?",
+        "What neighborhood is the Laleli Mosque in?",
+        "What neighborhood is the Esma Sultan Mansion in?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is the Laleli Mosque located?",
+          "answer": "Laleli, Fatih, Istanbul, Turkey",
+          "confidence": 1.0,
+          "sources": [
+            "Laleli Mosque"
+          ]
+        },
+        {
+          "sub_q": "Where is the Esma Sultan Mansion located?",
+          "answer": "Bosphorus in Ortak\u00f6y neighborhood of Istanbul, Turkey",
+          "confidence": 1.0,
+          "sources": [
+            "Esma Sultan Mansion"
+          ]
+        },
+        {
+          "sub_q": "What neighborhood is the Laleli Mosque in?",
+          "answer": "Fatih",
+          "confidence": 1.0,
+          "sources": [
+            "Laleli Mosque"
+          ]
+        },
+        {
+          "sub_q": "What neighborhood is the Esma Sultan Mansion in?",
+          "answer": "Ortak\u00f6y",
+          "confidence": 1.0,
+          "sources": [
+            "Esma Sultan Mansion"
+          ]
+        }
+      ],
+      "time_sec": 6.35,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8e3ea95542995a26add48d",
+    "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+    "gold_answer": "Greenwich Village, New York City",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.95,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the director of the romantic comedy 'Big Stone Gap'?",
+        "In which New York city is the director of 'Big Stone Gap' based?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the director of the romantic comedy 'Big Stone Gap'?",
+          "answer": "Adriana Trigiani",
+          "confidence": 1.0,
+          "sources": [
+            "Big Stone Gap (film)"
+          ]
+        },
+        {
+          "sub_q": "In which New York city is the director of 'Big Stone Gap' based?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 4.16,
+      "error": null
+    }
+  },
+  {
+    "id": "5abd94525542992ac4f382d2",
+    "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+    "gold_answer": "YG Entertainment",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "WINNER",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the South Korean boy group that released the album '2014 S/S'?",
+        "Who formed the South Korean boy group that released the album '2014 S/S'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the South Korean boy group that released the album '2014 S/S'?",
+          "answer": "WINNER",
+          "confidence": 1.0,
+          "sources": [
+            "2014 S/S"
+          ]
+        },
+        {
+          "sub_q": "Who formed the South Korean boy group that released the album '2014 S/S'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "2014 S/S"
+          ]
+        }
+      ],
+      "time_sec": 3.83,
+      "error": null
+    }
+  },
+  {
+    "id": "5a85b2d95542997b5ce40028",
+    "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+    "gold_answer": "Eenasul Fateh",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Eenasul Fateh",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.07,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Eenasul Fateh",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.5,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the real name of the person known by the stage name Aladin?",
+        "What contributions did Aladin make as a consultant to organizations?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the real name of the person known by the stage name Aladin?",
+          "answer": "Eenasul Fateh",
+          "confidence": 1.0,
+          "sources": [
+            "Eenasul Fateh"
+          ]
+        },
+        {
+          "sub_q": "What contributions did Aladin make as a consultant to organizations?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Eenasul Fateh",
+            "Management consulting"
+          ]
+        }
+      ],
+      "time_sec": 3.94,
+      "error": null
+    }
+  },
+  {
+    "id": "5a87ab905542996e4f3088c1",
+    "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+    "gold_answer": "3,677 seated",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "3,677",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.95,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "3677",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": false,
+      "sub_questions": [
+        "The arena where the Lewiston Maineiacs played their home games can seat how many people?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+          "answer": "3,677 seated",
+          "confidence": 1.0,
+          "sources": [
+            "Androscoggin Bank Colis\u00e9e"
+          ]
+        }
+      ],
+      "time_sec": 3.11,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7bbb64554299042af8f7cc",
+    "question": "Who is older, Annie Morton or Terry Richardson?",
+    "gold_answer": "Terry Richardson",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Terry Richardson",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the birth year of Annie Morton?",
+        "What is the birth year of Terry Richardson?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the birth year of Annie Morton?",
+          "answer": "1970",
+          "confidence": 1.0,
+          "sources": [
+            "Annie Morton"
+          ]
+        },
+        {
+          "sub_q": "What is the birth year of Terry Richardson?",
+          "answer": "1965",
+          "confidence": 1.0,
+          "sources": [
+            "Terry Richardson"
+          ]
+        }
+      ],
+      "time_sec": 3.57,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8db19d5542994ba4e3dd00",
+    "question": "Are Local H and For Against both from the United States?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.11,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is Local H from?",
+        "Where is For Against from?",
+        "Are both Local H and For Against from the United States?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is Local H from?",
+          "answer": "Zion, Illinois",
+          "confidence": 1.0,
+          "sources": [
+            "Local H"
+          ]
+        },
+        {
+          "sub_q": "Where is For Against from?",
+          "answer": "Lincoln, Nebraska",
+          "confidence": 1.0,
+          "sources": [
+            "For Against"
+          ]
+        },
+        {
+          "sub_q": "Are both Local H and For Against from the United States?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Local H",
+            "For Against"
+          ]
+        }
+      ],
+      "time_sec": 4.84,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7166395542994082a3e814",
+    "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+    "gold_answer": "Kansas Song",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Kansas Song",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.91,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Kansas Song (We\u2019re From Kansas)",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the university whose main campus is in Lawrence, Kansas?",
+        "What is the fight song of that university?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the university whose main campus is in Lawrence, Kansas?",
+          "answer": "University of Kansas",
+          "confidence": 1.0,
+          "sources": [
+            "University of Kansas"
+          ]
+        },
+        {
+          "sub_q": "What is the fight song of that university?",
+          "answer": "Kansas Song (We\u2019re From Kansas)",
+          "confidence": 1.0,
+          "sources": [
+            "Kansas Song",
+            "University of Kansas"
+          ]
+        }
+      ],
+      "time_sec": 3.98,
+      "error": null
+    }
+  },
+  {
+    "id": "5a877e5d5542993e715abf7d",
+    "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+    "gold_answer": "David Weissman",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "The Family Man",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the screenwriter for the film 'Evolution'?",
+        "What films has this screenwriter co-written that star Nicolas Cage?",
+        "What films has this screenwriter co-written that star T\u00e9a Leoni?",
+        "Which of these films features both Nicolas Cage and T\u00e9a Leoni?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the screenwriter for the film 'Evolution'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What films has this screenwriter co-written that star Nicolas Cage?",
+          "answer": "Deadfall and The Family Man",
+          "confidence": 0.9,
+          "sources": [
+            "Deadfall (1993 film)",
+            "The Family Man"
+          ]
+        },
+        {
+          "sub_q": "What films has this screenwriter co-written that star T\u00e9a Leoni?",
+          "answer": "The Family Man",
+          "confidence": 1.0,
+          "sources": [
+            "David Weissman",
+            "The Family Man"
+          ]
+        },
+        {
+          "sub_q": "Which of these films features both Nicolas Cage and T\u00e9a Leoni?",
+          "answer": "The Family Man",
+          "confidence": 1.0,
+          "sources": [
+            "The Family Man"
+          ]
+        }
+      ],
+      "time_sec": 6.22,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab3b0bf5542992ade7c6e39",
+    "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+    "gold_answer": "1999",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.07,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1999",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What movie starring Arnold Schwarzenegger features him as a former New York Police detective?",
+        "What year did Guns N Roses perform a promo for that movie?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What movie starring Arnold Schwarzenegger features him as a former New York Police detective?",
+          "answer": "End of Days",
+          "confidence": 1.0,
+          "sources": [
+            "End of Days (film)"
+          ]
+        },
+        {
+          "sub_q": "What year did Guns N Roses perform a promo for that movie?",
+          "answer": "1999",
+          "confidence": 1.0,
+          "sources": [
+            "Oh My God (Guns N' Roses song)"
+          ]
+        }
+      ],
+      "time_sec": 4.23,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab56e32554299637185c594",
+    "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.3,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the purpose of Random House Tower?",
+        "What is the purpose of 888 7th Avenue?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the purpose of Random House Tower?",
+          "answer": "The purpose of Random House Tower is to serve as the headquarters of book publisher Random House and as a luxury apartment complex.",
+          "confidence": 1.0,
+          "sources": [
+            "Random House Tower"
+          ]
+        },
+        {
+          "sub_q": "What is the purpose of 888 7th Avenue?",
+          "answer": "Office skyscraper and corporate headquarters for Vornado Realty Trust.",
+          "confidence": 1.0,
+          "sources": [
+            "888 7th Avenue"
+          ]
+        }
+      ],
+      "time_sec": 6.87,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab6d09255429954757d337d",
+    "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+    "gold_answer": "from 1986 to 2013",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "1986 to 2013",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1903\u20131912",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the football manager that recruited David Beckham?",
+        "During what timeframe did that manager manage Manchester United?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the football manager that recruited David Beckham?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "During what timeframe did that manager manage Manchester United?",
+          "answer": "1903\u20131912",
+          "confidence": 1.0,
+          "sources": [
+            "Ernest Mangnall"
+          ]
+        }
+      ],
+      "time_sec": 3.73,
+      "error": null
+    }
+  },
+  {
+    "id": "5a75e05c55429976ec32bc5f",
+    "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+    "gold_answer": "9,984",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.26,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is Brown State Fishing Lake located?",
+        "What is the population of the country where Brown State Fishing Lake is located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is Brown State Fishing Lake located?",
+          "answer": "Brown County, Kansas, United States",
+          "confidence": 1.0,
+          "sources": [
+            "Brown State Fishing Lake"
+          ]
+        },
+        {
+          "sub_q": "What is the population of the country where Brown State Fishing Lake is located?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Brown State Fishing Lake"
+          ]
+        }
+      ],
+      "time_sec": 4.35,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab3e45655429976abd1bcd4",
+    "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+    "gold_answer": "the North Atlantic Conference",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "North Atlantic Conference",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the current conference in which the Vermont Catamounts men's soccer team competes?",
+        "What was the name of that conference from 1988 to 1996?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the current conference in which the Vermont Catamounts men's soccer team competes?",
+          "answer": "America East Conference",
+          "confidence": 1.0,
+          "sources": [
+            "Vermont Catamounts men's soccer"
+          ]
+        },
+        {
+          "sub_q": "What was the name of that conference from 1988 to 1996?",
+          "answer": "North Atlantic Conference",
+          "confidence": 1.0,
+          "sources": [
+            "America East Conference"
+          ]
+        }
+      ],
+      "time_sec": 4.44,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab29c24554299449642c932",
+    "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.21,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Giuseppe Verdi an opera composer?",
+        "Is Ambroise Thomas an opera composer?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Giuseppe Verdi an opera composer?",
+          "answer": "Yes, Giuseppe Verdi was an Italian opera composer.",
+          "confidence": 1.0,
+          "sources": [
+            "Giuseppe Verdi"
+          ]
+        },
+        {
+          "sub_q": "Is Ambroise Thomas an opera composer?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Ambroise Thomas"
+          ]
+        }
+      ],
+      "time_sec": 4.44,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae0d4c9554299603e418468",
+    "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+    "gold_answer": "1969 until 1974",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.9,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1969 until 1974",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the president during Roger O. Egeberg's tenure as Assistant Secretary for Health and Scientific Affairs?",
+        "What were the years of the president's administration identified in the first question?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the president during Roger O. Egeberg's tenure as Assistant Secretary for Health and Scientific Affairs?",
+          "answer": "Richard Nixon",
+          "confidence": 0.9,
+          "sources": [
+            "Roger O. Egeberg"
+          ]
+        },
+        {
+          "sub_q": "What were the years of the president's administration identified in the first question?",
+          "answer": "1969 until 1974",
+          "confidence": 1.0,
+          "sources": [
+            "Richard Nixon"
+          ]
+        }
+      ],
+      "time_sec": 4.18,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8133725542995ce29dcbdb",
+    "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+    "gold_answer": "Robert Erskine Childers DSC",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.15,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the nationality of Henry Roth?",
+        "What is the nationality of Robert Erskine Childers?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the nationality of Henry Roth?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Henry Roth"
+          ]
+        },
+        {
+          "sub_q": "What is the nationality of Robert Erskine Childers?",
+          "answer": "Irish",
+          "confidence": 1.0,
+          "sources": [
+            "Erskine Barton Childers",
+            "Robert Caesar Childers",
+            "Robert Barton"
+          ]
+        }
+      ],
+      "time_sec": 4.14,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae7a8175542993210983ed8",
+    "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "gold_answer": "Pedro Rodr\u00edguez",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.92,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Pedro Rodr\u00edguez",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the Force India driver born in 1990?",
+        "Which Mexican Formula One drivers have held a podium position?",
+        "Has the identified driver from the first question held a podium position?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the Force India driver born in 1990?",
+          "answer": "Sergio P\u00e9rez",
+          "confidence": 1.0,
+          "sources": [
+            "Sergio P\u00e9rez"
+          ]
+        },
+        {
+          "sub_q": "Which Mexican Formula One drivers have held a podium position?",
+          "answer": "Pedro Rodr\u00edguez and Sergio P\u00e9rez",
+          "confidence": 0.9,
+          "sources": [
+            "Formula One drivers from Mexico"
+          ]
+        },
+        {
+          "sub_q": "Has the identified driver from the first question held a podium position?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 5.3,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae6050f55429929b0807a5e",
+    "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+    "gold_answer": "Sonic",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Tails",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.09,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Miles \"Tails\" Prower",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the singer of 'A Rather Blustery Day'?",
+        "What hedgehog character did this singer voice?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the singer of 'A Rather Blustery Day'?",
+          "answer": "Jim Cummings",
+          "confidence": 1.0,
+          "sources": [
+            "A Rather Blustery Day"
+          ]
+        },
+        {
+          "sub_q": "What hedgehog character did this singer voice?",
+          "answer": "Miles \"Tails\" Prower",
+          "confidence": 1.0,
+          "sources": [
+            "Kate Higgins"
+          ]
+        }
+      ],
+      "time_sec": 3.99,
+      "error": null
+    }
+  },
+  {
+    "id": "5adddccd5542997dc7907069",
+    "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+    "gold_answer": "keyboard function keys",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.9,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Windows, Mac, Linux, Solaris, Mobile devices, iOS and Android tablets and smartphones, ChromeOS clients",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What program was the Apple Remote originally designed to interact with?",
+        "What other devices can control the program identified in the first question?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What program was the Apple Remote originally designed to interact with?",
+          "answer": "Front Row media program",
+          "confidence": 1.0,
+          "sources": [
+            "Apple Remote"
+          ]
+        },
+        {
+          "sub_q": "What other devices can control the program identified in the first question?",
+          "answer": "Windows, Mac, Linux, Solaris, Mobile devices, iOS and Android tablets and smartphones, ChromeOS clients.",
+          "confidence": 0.9,
+          "sources": [
+            "NetSupport Manager"
+          ]
+        }
+      ],
+      "time_sec": 4.15,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae2070a5542994d89d5b313",
+    "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+    "gold_answer": "Badly Drawn Boy",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.9,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the number of instruments used by Badly Drawn Boy during performances?",
+        "How many members are in Badly Drawn Boy's performance act?",
+        "What is the number of instruments used by Wolf Alice during performances?",
+        "How many members are in Wolf Alice's performance act?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the number of instruments used by Badly Drawn Boy during performances?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "The Hour of Bewilderbeast",
+            "About a Boy (soundtrack)",
+            "Badly Drawn Boy"
+          ]
+        },
+        {
+          "sub_q": "How many members are in Badly Drawn Boy's performance act?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Badly Drawn Boy",
+            "Badly Drawn Boy discography",
+            "About a Boy (soundtrack)"
+          ]
+        },
+        {
+          "sub_q": "What is the number of instruments used by Wolf Alice during performances?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "How many members are in Wolf Alice's performance act?",
+          "answer": "4",
+          "confidence": 1.0,
+          "sources": [
+            "Wolf Alice"
+          ]
+        }
+      ],
+      "time_sec": 6.03,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae22b8d554299234fd0440f",
+    "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+    "gold_answer": "World's Best Goalkeeper",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.2,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "World's Best Goalkeeper",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Kasper Schmeichel's father?",
+        "What was Kasper Schmeichel's father voted for by the IFFHS in 1992?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Kasper Schmeichel's father?",
+          "answer": "Peter Schmeichel",
+          "confidence": 1.0,
+          "sources": [
+            "Kasper Schmeichel"
+          ]
+        },
+        {
+          "sub_q": "What was Kasper Schmeichel's father voted for by the IFFHS in 1992?",
+          "answer": "World's Best Goalkeeper",
+          "confidence": 1.0,
+          "sources": [
+            "Peter Schmeichel"
+          ]
+        }
+      ],
+      "time_sec": 4.59,
+      "error": null
+    }
+  },
+  {
+    "id": "5a722b8655429971e9dc9329",
+    "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+    "gold_answer": "Barton Lee Hazlewood",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Lee Hazlewood",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.82,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Lee Hazlewood, Jim Shoulders",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who wrote the song 'These Boots Are Made for Walkin''?",
+        "Who died in 2007?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who wrote the song 'These Boots Are Made for Walkin''?",
+          "answer": "Lee Hazlewood",
+          "confidence": 1.0,
+          "sources": [
+            "These Boots Are Made for Walkin'"
+          ]
+        },
+        {
+          "sub_q": "Who died in 2007?",
+          "answer": "Jim Shoulders and Lee Hazlewood",
+          "confidence": 1.0,
+          "sources": [
+            "Jim Shoulders",
+            "Lee Hazlewood"
+          ]
+        }
+      ],
+      "time_sec": 4.19,
+      "error": null
+    }
+  },
+  {
+    "id": "5adf37a95542995ec70e8f97",
+    "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+    "gold_answer": "1838",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.12,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1838",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What year was Virginia Commonwealth University founded?",
+        "Who was the head coach of the 2011\u201312 VCU Rams men's basketball team?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What year was Virginia Commonwealth University founded?",
+          "answer": "1838",
+          "confidence": 1.0,
+          "sources": [
+            "Virginia Commonwealth University"
+          ]
+        },
+        {
+          "sub_q": "Who was the head coach of the 2011\u201312 VCU Rams men's basketball team?",
+          "answer": "Shaka Smart",
+          "confidence": 1.0,
+          "sources": [
+            "2011\u201312 VCU Rams men's basketball team"
+          ]
+        }
+      ],
+      "time_sec": 4.36,
+      "error": null
+    }
+  },
+  {
+    "id": "5abd259d55429924427fcf1a",
+    "question": "Are both Dictyosperma, and Huernia described as a genus?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.8,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Dictyosperma classified as a genus?",
+        "Is Huernia classified as a genus?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Dictyosperma classified as a genus?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Dictyosperma"
+          ]
+        },
+        {
+          "sub_q": "Is Huernia classified as a genus?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Huernia"
+          ]
+        }
+      ],
+      "time_sec": 3.68,
+      "error": null
+    }
+  },
+  {
+    "id": "5a828c8355429966c78a6a50",
+    "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+    "gold_answer": "Henry J. Kaiser",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Henry John Kaiser",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is Kaiser Ventures corporation?",
+        "Who founded Kaiser Ventures corporation?",
+        "Who is known as the father of modern American shipbuilding?",
+        "Is the founder of Kaiser Ventures corporation the same person as the father of modern American shipbuilding?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is Kaiser Ventures corporation?",
+          "answer": "Kaiser Ventures (formerly Kaiser Steel) is a corporation founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry.",
+          "confidence": 0.9,
+          "sources": [
+            "Kaiser Ventures"
+          ]
+        },
+        {
+          "sub_q": "Who founded Kaiser Ventures corporation?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Who is known as the father of modern American shipbuilding?",
+          "answer": "Henry John Kaiser",
+          "confidence": 1.0,
+          "sources": [
+            "Henry J. Kaiser"
+          ]
+        },
+        {
+          "sub_q": "Is the founder of Kaiser Ventures corporation the same person as the father of modern American shipbuilding?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Henry J. Kaiser",
+            "Kaiser Ventures"
+          ]
+        }
+      ],
+      "time_sec": 5.94,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8a3e745542996c9b8d5e70",
+    "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+    "gold_answer": "Arena of Khazan",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Arena of Khazan",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.79,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is 'Tunnels and Trolls'?",
+        "Who is Ken St. Andre?",
+        "What is the name of the adventure designed by Ken St. Andre for 'Tunnels and Trolls'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is 'Tunnels and Trolls'?",
+          "answer": "Tunnels & Trolls (abbreviated 'T&T') is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.",
+          "confidence": 1.0,
+          "sources": [
+            "Tunnels &amp; Trolls"
+          ]
+        },
+        {
+          "sub_q": "Who is Ken St. Andre?",
+          "answer": "Kenneth Eugene St. Andre is an American fantasy author and game designer, best known for his work with 'Tunnels & Trolls' and 'Wasteland'.",
+          "confidence": 1.0,
+          "sources": [
+            "Ken St. Andre"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the adventure designed by Ken St. Andre for 'Tunnels and Trolls'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 6.41,
+      "error": null
+    }
+  },
+  {
+    "id": "5ac23ff0554299636651994d",
+    "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+    "gold_answer": "2000",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.32,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": false,
+      "sub_questions": [
+        "When was Poison's album \"Shut Up, Make Love\" released?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "When was Poison's album \"Shut Up, Make Love\" released?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Shut Up, Make Love",
+            "Poison (American band)",
+            "Be the One (Poison song)"
+          ]
+        }
+      ],
+      "time_sec": 3.07,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae4a3265542995ad6573de5",
+    "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+    "gold_answer": "Fujioka, Gunma",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "Fujioka, Gunma",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.08,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Fujioka, Gunma",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Buck-Tick?",
+        "What is the origin or hometown of Buck-Tick?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Buck-Tick?",
+          "answer": "Buck-Tick is a Japanese rock band formed in Fujioka, Gunma in 1983, consisting of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass), and Toll Yagami (drums). They are known for their significant impact on the visual kei movement and have released 20 studio albums, many of which reached the top ten on the charts.",
+          "confidence": 1.0,
+          "sources": [
+            "Buck-Tick"
+          ]
+        },
+        {
+          "sub_q": "What is the origin or hometown of Buck-Tick?",
+          "answer": "Fujioka, Gunma",
+          "confidence": 1.0,
+          "sources": [
+            "Buck-Tick"
+          ]
+        }
+      ],
+      "time_sec": 4.66,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae0361155429925eb1afc2c",
+    "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+    "gold_answer": "Charles Eug\u00e8ne",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Charles Nungesser",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.57,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Charles Nungesser",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the French ace pilot known for flying L'Oiseau Blanc?",
+        "What is L'Oiseau Blanc and its significance in aviation history?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the French ace pilot known for flying L'Oiseau Blanc?",
+          "answer": "Charles Nungesser",
+          "confidence": 1.0,
+          "sources": [
+            "L'Oiseau Blanc"
+          ]
+        },
+        {
+          "sub_q": "What is L'Oiseau Blanc and its significance in aviation history?",
+          "answer": "L'Oiseau Blanc was a French Levasseur PL.8 biplane that disappeared in 1927 during an attempt to make the first non-stop transatlantic flight between Paris and New York City, competing for the Orteig Prize. Its significance lies in its association with aviation pioneers Charles Nungesser and Fran\u00e7ois Coli, and its role in the early history of transatlantic flight.",
+          "confidence": 0.9,
+          "sources": [
+            "L'Oiseau Blanc",
+            "Fran\u00e7ois Coli",
+            "Levasseur PL.8"
+          ]
+        }
+      ],
+      "time_sec": 4.34,
+      "error": null
+    }
+  },
+  {
+    "id": "5abc0a5d5542993f40c73c64",
+    "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.1,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Freakonomics an American documentary?",
+        "Is In the Realm of the Hackers an American documentary?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Freakonomics an American documentary?",
+          "answer": "Yes, Freakonomics is an American documentary.",
+          "confidence": 1.0,
+          "sources": [
+            "Freakonomics (film)"
+          ]
+        },
+        {
+          "sub_q": "Is In the Realm of the Hackers an American documentary?",
+          "answer": "No",
+          "confidence": 1.0,
+          "sources": [
+            "In the Realm of the Hackers"
+          ]
+        }
+      ],
+      "time_sec": 4.4,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7cc50e554299452d57ba3e",
+    "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+    "gold_answer": "Letters to Cleo",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.11,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "6",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "How many members were in the band Letters to Cleo?",
+        "How many members were in the band Screaming Trees?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "How many members were in the band Letters to Cleo?",
+          "answer": "6",
+          "confidence": 1.0,
+          "sources": [
+            "Letters to Cleo"
+          ]
+        },
+        {
+          "sub_q": "How many members were in the band Screaming Trees?",
+          "answer": "4",
+          "confidence": 0.9,
+          "sources": [
+            "Screaming Trees"
+          ]
+        }
+      ],
+      "time_sec": 4.1,
+      "error": null
+    }
+  },
+  {
+    "id": "5abf63f15542997ec76fd3ea",
+    "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+    "gold_answer": "October 1922",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "1923",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.0,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "7 November 1917 to October 1922",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "When was Alexander Kerensky defeated by the Bolsheviks?",
+        "When did the Russian Civil War end?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "When was Alexander Kerensky defeated by the Bolsheviks?",
+          "answer": "7 November 1917",
+          "confidence": 1.0,
+          "sources": [
+            "Alexander Kerensky"
+          ]
+        },
+        {
+          "sub_q": "When did the Russian Civil War end?",
+          "answer": "October 1922",
+          "confidence": 1.0,
+          "sources": [
+            "Russian Civil War"
+          ]
+        }
+      ],
+      "time_sec": 3.93,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8ef2a75542995a26add583",
+    "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+    "gold_answer": "2000",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "2000",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.13,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "2000",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the author of 'Seven Brief Lessons on Physics'?",
+        "In what year did the author start working in France?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the author of 'Seven Brief Lessons on Physics'?",
+          "answer": "Carlo Rovelli",
+          "confidence": 1.0,
+          "sources": [
+            "Seven Brief Lessons on Physics"
+          ]
+        },
+        {
+          "sub_q": "In what year did the author start working in France?",
+          "answer": "2000",
+          "confidence": 1.0,
+          "sources": [
+            "Carlo Rovelli"
+          ]
+        }
+      ],
+      "time_sec": 4.24,
+      "error": null
+    }
+  },
+  {
+    "id": "5a80721b554299485f5985ef",
+    "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+    "gold_answer": "World War II",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.73,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "World War II",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the Livesey Hal War Memorial?",
+        "What war is commemorated by the Livesey Hal War Memorial?",
+        "What was the estimated number of casualties in that war?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the Livesey Hal War Memorial?",
+          "answer": "The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London, and it is also a tribute to those employees who served in the wars.",
+          "confidence": 1.0,
+          "sources": [
+            "Livesey Hall War Memorial"
+          ]
+        },
+        {
+          "sub_q": "What war is commemorated by the Livesey Hal War Memorial?",
+          "answer": "World War I and World War II",
+          "confidence": 1.0,
+          "sources": [
+            "Livesey Hall War Memorial"
+          ]
+        },
+        {
+          "sub_q": "What was the estimated number of casualties in that war?",
+          "answer": "Over 60 million people were killed in World War II.",
+          "confidence": 1.0,
+          "sources": [
+            "World War II casualties"
+          ]
+        }
+      ],
+      "time_sec": 5.12,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab51dae5542991779162d82",
+    "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.1,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is Elko Regional Airport located?",
+        "Where is Gerald R. Ford International Airport located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is Elko Regional Airport located?",
+          "answer": "a mile west of downtown Elko, in Elko County, Nevada.",
+          "confidence": 1.0,
+          "sources": [
+            "Elko Regional Airport"
+          ]
+        },
+        {
+          "sub_q": "Where is Gerald R. Ford International Airport located?",
+          "answer": "Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan.",
+          "confidence": 1.0,
+          "sources": [
+            "Gerald R. Ford International Airport"
+          ]
+        }
+      ],
+      "time_sec": 4.5,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7571135542992d0ec05f98",
+    "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+    "gold_answer": "New York City",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "New York City",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "New York City",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What university did Ralph Hefferline teach at?",
+        "In what city is that university located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What university did Ralph Hefferline teach at?",
+          "answer": "Columbia University",
+          "confidence": 1.0,
+          "sources": [
+            "Ralph Hefferline",
+            "Columbia University"
+          ]
+        },
+        {
+          "sub_q": "In what city is that university located?",
+          "answer": "New York City",
+          "confidence": 1.0,
+          "sources": [
+            "Columbia University"
+          ]
+        }
+      ],
+      "time_sec": 4.16,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7a0e1e5542990783324e1a",
+    "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+    "gold_answer": "Scotch Collie",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.3,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "scotch collie",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.8,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What are the ancestors of the Manchester Terrier?",
+        "What are the ancestors of the Scotch Collie?",
+        "Do the ancestors of the Manchester Terrier include Gordon Setters?",
+        "Do the ancestors of the Manchester Terrier include Irish Setters?",
+        "Do the ancestors of the Scotch Collie include Gordon Setters?",
+        "Do the ancestors of the Scotch Collie include Irish Setters?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What are the ancestors of the Manchester Terrier?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What are the ancestors of the Scotch Collie?",
+          "answer": "Roman Cattle Dogs, Native Celtic Dogs, Viking Herding Spitzes, Gordon Setters, Irish Setters",
+          "confidence": 1.0,
+          "sources": [
+            "Scotch Collie"
+          ]
+        },
+        {
+          "sub_q": "Do the ancestors of the Manchester Terrier include Gordon Setters?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Do the ancestors of the Manchester Terrier include Irish Setters?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Do the ancestors of the Scotch Collie include Gordon Setters?",
+          "answer": "Yes",
+          "confidence": 0.9,
+          "sources": [
+            "Scotch Collie"
+          ]
+        },
+        {
+          "sub_q": "Do the ancestors of the Scotch Collie include Irish Setters?",
+          "answer": "Yes",
+          "confidence": 0.8,
+          "sources": [
+            "Scotch Collie"
+          ]
+        }
+      ],
+      "time_sec": 7.6,
+      "error": null
+    }
+  },
+  {
+    "id": "5a74106b55429979e288289e",
+    "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+    "gold_answer": "Mumbai",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.21,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Mumbai, Maharashtra",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What company did Sachin Warrier work for as a software engineer?",
+        "Where is the headquarters of that company located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What company did Sachin Warrier work for as a software engineer?",
+          "answer": "Tata Consultancy Services",
+          "confidence": 1.0,
+          "sources": [
+            "Sachin Warrier"
+          ]
+        },
+        {
+          "sub_q": "Where is the headquarters of that company located?",
+          "answer": "Mumbai, Maharashtra",
+          "confidence": 1.0,
+          "sources": [
+            "Tata Consultancy Services"
+          ]
+        }
+      ],
+      "time_sec": 4.2,
+      "error": null
+    }
+  },
+  {
+    "id": "5a79311755429970f5fffe67",
+    "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+    "gold_answer": "1962",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.21,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1962",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the manga series based on Ichitaka Seto?",
+        "Who is the author of the manga series based on Ichitaka Seto?",
+        "What year was the author of the manga series born?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the manga series based on Ichitaka Seto?",
+          "answer": "I\"s",
+          "confidence": 1.0,
+          "sources": [
+            "I\"s"
+          ]
+        },
+        {
+          "sub_q": "Who is the author of the manga series based on Ichitaka Seto?",
+          "answer": "Masakazu Katsura",
+          "confidence": 1.0,
+          "sources": [
+            "I\"s",
+            "Masakazu Katsura"
+          ]
+        },
+        {
+          "sub_q": "What year was the author of the manga series born?",
+          "answer": "1962",
+          "confidence": 1.0,
+          "sources": [
+            "Masakazu Katsura"
+          ]
+        }
+      ],
+      "time_sec": 5.67,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab2d3df554299194fa9352c",
+    "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+    "gold_answer": "sovereignty",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Ethiopian sovereignty",
+      "exact_match": false,
+      "contains_gold": true,
+      "time_sec": 0.92,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Ethiopian sovereignty",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What battle did Giuseppe Arimondi die in?",
+        "What was the outcome of that battle for Ethiopia?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What battle did Giuseppe Arimondi die in?",
+          "answer": "Battle of Adwa",
+          "confidence": 1.0,
+          "sources": [
+            "Giuseppe Arimondi",
+            "Battle of Adwa"
+          ]
+        },
+        {
+          "sub_q": "What was the outcome of that battle for Ethiopia?",
+          "answer": "The outcome of the Battle of Adwa for Ethiopia was a decisive victory that secured Ethiopian sovereignty.",
+          "confidence": 1.0,
+          "sources": [
+            "Battle of Adwa",
+            "Treaty of Addis Ababa"
+          ]
+        }
+      ],
+      "time_sec": 4.13,
+      "error": null
+    }
+  },
+  {
+    "id": "5a760ab65542994ccc918697",
+    "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+    "gold_answer": "Nelson Rockefeller",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Nelson Rockefeller",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.02,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Nelson Rockefeller",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.5,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Alfred Balk and what role did he serve in the Committee on the Employment of Minority Groups in the News Media?",
+        "Who was the United States Vice President during the time Alfred Balk served in that committee?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Alfred Balk and what role did he serve in the Committee on the Employment of Minority Groups in the News Media?",
+          "answer": "Alfred Balk was an American reporter, nonfiction author, and magazine editor. He served as secretary of New York Governor Nelson Rockefeller's Committee on the Employment of Minority Groups in the News Media.",
+          "confidence": 1.0,
+          "sources": [
+            "Alfred Balk"
+          ]
+        },
+        {
+          "sub_q": "Who was the United States Vice President during the time Alfred Balk served in that committee?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Alfred Balk",
+            "Gerald Ford"
+          ]
+        }
+      ],
+      "time_sec": 4.7,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7d54165542995f4f402256",
+    "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+    "gold_answer": "Yellowcraig",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.87,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Firth of Forth",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the location of the medieval fortress in Dirleton, East Lothian, Scotland?",
+        "What coastal area is located south of Dirleton, East Lothian, Scotland?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the location of the medieval fortress in Dirleton, East Lothian, Scotland?",
+          "answer": "Dirleton Castle is located in the village of Dirleton, East Lothian, Scotland.",
+          "confidence": 1.0,
+          "sources": [
+            "Dirleton Castle"
+          ]
+        },
+        {
+          "sub_q": "What coastal area is located south of Dirleton, East Lothian, Scotland?",
+          "answer": "Firth of Forth",
+          "confidence": 0.9,
+          "sources": [
+            "Dirleton",
+            "Dirleton Kirk"
+          ]
+        }
+      ],
+      "time_sec": 4.11,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab859a955429934fafe6d7b",
+    "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+    "gold_answer": "Phil Spector",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Phil Spector",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the song that was inspired by words on a tombstone?",
+        "Who is the writer of the song identified in the first question?",
+        "What is the track listing of the box set 'Back to Mono'?",
+        "Which song is the first track on the box set 'Back to Mono'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the song that was inspired by words on a tombstone?",
+          "answer": "To Know Him Is to Love Him",
+          "confidence": 1.0,
+          "sources": [
+            "To Know Him Is to Love Him"
+          ]
+        },
+        {
+          "sub_q": "Who is the writer of the song identified in the first question?",
+          "answer": "Phil Spector",
+          "confidence": 1.0,
+          "sources": [
+            "To Know Him Is to Love Him",
+            "Back to Mono (1958\u20131969)"
+          ]
+        },
+        {
+          "sub_q": "What is the track listing of the box set 'Back to Mono'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Back to Mono (1958\u20131969)"
+          ]
+        },
+        {
+          "sub_q": "Which song is the first track on the box set 'Back to Mono'?",
+          "answer": "To Know Him Is to Love Him",
+          "confidence": 1.0,
+          "sources": [
+            "Back to Mono (1958\u20131969)"
+          ]
+        }
+      ],
+      "time_sec": 6.94,
+      "error": null
+    }
+  },
+  {
+    "id": "5add61d65542995b365fab21",
+    "question": "What type of forum did a former Soviet statesman initiate?",
+    "gold_answer": "Organizations could come together to address global issues",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.18,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the former Soviet statesman?",
+        "What type of forum did this statesman initiate?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the former Soviet statesman?",
+          "answer": "Mikhail Gorbachev",
+          "confidence": 1.0,
+          "sources": [
+            "Mikhail Gorbachev"
+          ]
+        },
+        {
+          "sub_q": "What type of forum did this statesman initiate?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 4.31,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8e068b5542995085b37384",
+    "question": "Are Ferocactus and Silene both types of plant?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.06,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Ferocactus a type of plant?",
+        "Is Silene a type of plant?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Ferocactus a type of plant?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Ferocactus"
+          ]
+        },
+        {
+          "sub_q": "Is Silene a type of plant?",
+          "answer": "Yes, Silene is a genus of flowering plants.",
+          "confidence": 1.0,
+          "sources": [
+            "Silene"
+          ]
+        }
+      ],
+      "time_sec": 5.01,
+      "error": null
+    }
+  },
+  {
+    "id": "5abbf698554299114383a0b5",
+    "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+    "gold_answer": "English Electric Canberra",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.2,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "English Electric Canberra",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is a first-generation jet-powered medium bomber?",
+        "Which British first-generation jet-powered medium bombers were developed during World War II?",
+        "Which of these bombers was used in the South West Pacific theatre of World War II?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is a first-generation jet-powered medium bomber?",
+          "answer": "The English Electric Canberra is a first-generation jet-powered medium bomber.",
+          "confidence": 1.0,
+          "sources": [
+            "English Electric Canberra"
+          ]
+        },
+        {
+          "sub_q": "Which British first-generation jet-powered medium bombers were developed during World War II?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "English Electric Canberra"
+          ]
+        },
+        {
+          "sub_q": "Which of these bombers was used in the South West Pacific theatre of World War II?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 5.51,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8e1027554299653c1aa15f",
+    "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+    "gold_answer": "2009 Big 12 Conference",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.13,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "2009",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.5,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What conference did the Colorado Buffaloes play in during their 14th season in the NCAA Division?",
+        "What year was the 14th season for that conference?",
+        "What was the Colorado Buffaloes' record in conference play during that season?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What conference did the Colorado Buffaloes play in during their 14th season in the NCAA Division?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What year was the 14th season for that conference?",
+          "answer": "2009",
+          "confidence": 1.0,
+          "sources": [
+            "2009 Big 12 Conference football season"
+          ]
+        },
+        {
+          "sub_q": "What was the Colorado Buffaloes' record in conference play during that season?",
+          "answer": "8\u201310",
+          "confidence": 1.0,
+          "sources": [
+            "2016\u201317 Colorado Buffaloes men's basketball team"
+          ]
+        }
+      ],
+      "time_sec": 5.43,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab84bf555429916710eb01f",
+    "question": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+    "gold_answer": "1,462",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "1462",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.81,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1,462",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who bought Euromarch\u00e9 in 1991?",
+        "How many hypermarkets did that chain operate at the end of 2016?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who bought Euromarch\u00e9 in 1991?",
+          "answer": "Carrefour",
+          "confidence": 1.0,
+          "sources": [
+            "Euromarch\u00e9"
+          ]
+        },
+        {
+          "sub_q": "How many hypermarkets did that chain operate at the end of 2016?",
+          "answer": "1,462",
+          "confidence": 1.0,
+          "sources": [
+            "Carrefour"
+          ]
+        }
+      ],
+      "time_sec": 4.1,
+      "error": null
+    }
+  },
+  {
+    "id": "5a77724455429972597f153e",
+    "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+    "gold_answer": "Indianapolis Motor Speedway",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Indianapolis Motor Speedway",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.02,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Indianapolis Motor Speedway",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the race track in the Midwest that hosts a 500-mile race?",
+        "What month does the 500-mile race at the identified race track take place?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the race track in the Midwest that hosts a 500-mile race?",
+          "answer": "Indianapolis Motor Speedway",
+          "confidence": 1.0,
+          "sources": [
+            "Indianapolis Motor Speedway",
+            "1957 Indianapolis 500"
+          ]
+        },
+        {
+          "sub_q": "What month does the 500-mile race at the identified race track take place?",
+          "answer": "May",
+          "confidence": 1.0,
+          "sources": [
+            "1957 Indianapolis 500"
+          ]
+        }
+      ],
+      "time_sec": 4.3,
+      "error": null
+    }
+  },
+  {
+    "id": "5a87c13f5542996e4f30890c",
+    "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+    "gold_answer": "Rome",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.02,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Rome",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is known as the 'Prince of tenors'?",
+        "What opera by Giacomo Puccini was adapted into a film?",
+        "In what city was the film based on the opera filmed?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is known as the 'Prince of tenors'?",
+          "answer": "Franco Corelli",
+          "confidence": 1.0,
+          "sources": [
+            "Franco Corelli"
+          ]
+        },
+        {
+          "sub_q": "What opera by Giacomo Puccini was adapted into a film?",
+          "answer": "La boh\u00e8me",
+          "confidence": 1.0,
+          "sources": [
+            "La Boh\u00e8me (1988 film)"
+          ]
+        },
+        {
+          "sub_q": "In what city was the film based on the opera filmed?",
+          "answer": "Rome",
+          "confidence": 1.0,
+          "sources": [
+            "Tosca (1956 film)"
+          ]
+        }
+      ],
+      "time_sec": 5.61,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab96ab755429970cfb8eacd",
+    "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+    "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.07,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Delirium",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the title of Ellie Goulding's third studio album?",
+        "Who are the writers that collaborated on Ellie Goulding's album 'Delirium'?",
+        "What are the notable songs from the album 'Delirium'?",
+        "What is the release date of the album 'Delirium'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the title of Ellie Goulding's third studio album?",
+          "answer": "Delirium",
+          "confidence": 1.0,
+          "sources": [
+            "Delirium (Ellie Goulding album)"
+          ]
+        },
+        {
+          "sub_q": "Who are the writers that collaborated on Ellie Goulding's album 'Delirium'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Delirium (Ellie Goulding album)",
+            "Delirium World Tour"
+          ]
+        },
+        {
+          "sub_q": "What are the notable songs from the album 'Delirium'?",
+          "answer": "The notable songs from the album 'Delirium' are \"On My Mind\", \"Army\", and \"Something in the Way You Move\".",
+          "confidence": 1.0,
+          "sources": [
+            "Delirium (Ellie Goulding album)"
+          ]
+        },
+        {
+          "sub_q": "What is the release date of the album 'Delirium'?",
+          "answer": "6 November 2015",
+          "confidence": 1.0,
+          "sources": [
+            "Delirium (Ellie Goulding album)"
+          ]
+        }
+      ],
+      "time_sec": 6.51,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8a43eb5542996c9b8d5e82",
+    "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+    "gold_answer": "Marion, South Australia",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Adelaide",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.89,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Marion",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What Australian city was founded in 1838?",
+        "Which Prime Minister of Australia opened a boarding school?",
+        "What is the name of the boarding school opened by the Prime Minister?",
+        "What London school shares the same name as the boarding school?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What Australian city was founded in 1838?",
+          "answer": "Marion",
+          "confidence": 1.0,
+          "sources": [
+            "Marion, South Australia"
+          ]
+        },
+        {
+          "sub_q": "Which Prime Minister of Australia opened a boarding school?",
+          "answer": "Robert Menzies",
+          "confidence": 1.0,
+          "sources": [
+            "Westminster School, Adelaide"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the boarding school opened by the Prime Minister?",
+          "answer": "Westminster School",
+          "confidence": 1.0,
+          "sources": [
+            "Westminster School, Adelaide"
+          ]
+        },
+        {
+          "sub_q": "What London school shares the same name as the boarding school?",
+          "answer": "Westminster School",
+          "confidence": 1.0,
+          "sources": [
+            "Westminster School, Adelaide"
+          ]
+        }
+      ],
+      "time_sec": 6.66,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae73acb5542991e8301cc07",
+    "question": "D1NZ is a series based on what oversteering technique?",
+    "gold_answer": "Drifting",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "drifting",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.19,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "drifting",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is D1NZ?",
+        "What is the oversteering technique associated with D1NZ?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is D1NZ?",
+          "answer": "D1NZ is a production car drifting series in New Zealand, recognized as the longest running drifting series in the world.",
+          "confidence": 1.0,
+          "sources": [
+            "D1NZ"
+          ]
+        },
+        {
+          "sub_q": "What is the oversteering technique associated with D1NZ?",
+          "answer": "Drifting is the oversteering technique associated with D1NZ, where the driver intentionally oversteers, causing loss of traction in the rear wheels while maintaining control through a corner.",
+          "confidence": 0.9,
+          "sources": [
+            "D1NZ",
+            "Drifting (motorsport)"
+          ]
+        }
+      ],
+      "time_sec": 4.27,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7320565542991f9a20c61d",
+    "question": "who is younger Keith Bostic or Jerry Glanville ?",
+    "gold_answer": "Keith Bostic",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.42,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Keith Bostic",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the birth year of Keith Bostic?",
+        "What is the birth year of Jerry Glanville?",
+        "Which birth year is more recent?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the birth year of Keith Bostic?",
+          "answer": "1961",
+          "confidence": 1.0,
+          "sources": [
+            "Keith Bostic (American football)"
+          ]
+        },
+        {
+          "sub_q": "What is the birth year of Jerry Glanville?",
+          "answer": "1941",
+          "confidence": 1.0,
+          "sources": [
+            "Jerry Glanville"
+          ]
+        },
+        {
+          "sub_q": "Which birth year is more recent?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 4.65,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae32e125542991a06ce9946",
+    "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+    "gold_answer": "35,124",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.96,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "25,949",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What city is Kirton End located in?",
+        "What was the population of that city according to the 2001 census?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What city is Kirton End located in?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Kirton End"
+          ]
+        },
+        {
+          "sub_q": "What was the population of that city according to the 2001 census?",
+          "answer": "25,949",
+          "confidence": 1.0,
+          "sources": [
+            "Borough of Berwick-upon-Tweed"
+          ]
+        }
+      ],
+      "time_sec": 4.42,
+      "error": null
+    }
+  },
+  {
+    "id": "5adc53f75542996e6852530a",
+    "question": "Are both Cypress and Ajuga genera?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.78,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.1,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Cypress a genus in plant taxonomy?",
+        "Is Ajuga a genus in plant taxonomy?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Cypress a genus in plant taxonomy?",
+          "answer": "UNKNOWN",
+          "confidence": 0.1,
+          "sources": [
+            "Cypress",
+            "Cupressus"
+          ]
+        },
+        {
+          "sub_q": "Is Ajuga a genus in plant taxonomy?",
+          "answer": "Yes, Ajuga is a genus in plant taxonomy.",
+          "confidence": 1.0,
+          "sources": [
+            "Ajuga"
+          ]
+        }
+      ],
+      "time_sec": 3.65,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8b20335542996c9b8d5fb3",
+    "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+    "gold_answer": "shortest player ever to play in the National Basketball Association",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.29,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Muggsy Bogues",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.8,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was a member of the Charlotte Hornets during the 1992-93 season?",
+        "What was the role of that player with the Charlotte Sting?",
+        "What distinction or notable achievement does that player hold?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was a member of the Charlotte Hornets during the 1992-93 season?",
+          "answer": "Alonzo Mourning",
+          "confidence": 1.0,
+          "sources": [
+            "1992\u201393 Charlotte Hornets season"
+          ]
+        },
+        {
+          "sub_q": "What was the role of that player with the Charlotte Sting?",
+          "answer": "Player",
+          "confidence": 0.8,
+          "sources": [
+            "Ayana Walker",
+            "Muggsy Bogues"
+          ]
+        },
+        {
+          "sub_q": "What distinction or notable achievement does that player hold?",
+          "answer": "Muggsy Bogues is the shortest player ever to play in the National Basketball Association.",
+          "confidence": 1.0,
+          "sources": [
+            "Muggsy Bogues"
+          ]
+        }
+      ],
+      "time_sec": 4.91,
+      "error": null
+    }
+  },
+  {
+    "id": "5a85fb085542994775f606de",
+    "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+    "gold_answer": "Ronald Shusett",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.2,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Ronald Shusett",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the film that has a score composed by Jerry Goldsmith?",
+        "Who is the executive producer of that film?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the film that has a score composed by Jerry Goldsmith?",
+          "answer": "Legend",
+          "confidence": 1.0,
+          "sources": [
+            "Legend (film score)"
+          ]
+        },
+        {
+          "sub_q": "Who is the executive producer of that film?",
+          "answer": "Ronald Shusett",
+          "confidence": 1.0,
+          "sources": [
+            "Alien (film)"
+          ]
+        }
+      ],
+      "time_sec": 4.2,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7be2595542997c3ec972ac",
+    "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+    "gold_answer": "Adeline Virginia Woolf",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "Virginia Woolf",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.13,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1882",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What year was Emma Bull born?",
+        "What year was Virginia Woolf born?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What year was Emma Bull born?",
+          "answer": "1954",
+          "confidence": 1.0,
+          "sources": [
+            "Emma Bull"
+          ]
+        },
+        {
+          "sub_q": "What year was Virginia Woolf born?",
+          "answer": "1882",
+          "confidence": 1.0,
+          "sources": [
+            "Virginia Woolf"
+          ]
+        }
+      ],
+      "time_sec": 3.79,
+      "error": null
+    }
+  },
+  {
+    "id": "5a77152355429966f1a36c2e",
+    "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+    "gold_answer": "821",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.23,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the nursery rhyme 'What Are Little Girls Made Of?' about?",
+        "What is the Roud Folk Song Index?",
+        "What is the Roud Folk Song Index entry for the nursery rhyme 'What Are Little Girls Made Of?'"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the nursery rhyme 'What Are Little Girls Made Of?' about?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What is the Roud Folk Song Index?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What is the Roud Folk Song Index entry for the nursery rhyme 'What Are Little Girls Made Of?'",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 5.96,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8f4c8d554299458435d5a3",
+    "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+    "gold_answer": "more than 70 countries",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "70",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Scott Parkin and what are his criticisms of ExxonMobil?",
+        "What is the name of the other corporation that Scott Parkin criticizes?",
+        "In how many countries does the other corporation operate?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Scott Parkin and what are his criticisms of ExxonMobil?",
+          "answer": "Scott Parkin is an anti-war, environmental and global justice organizer, and a vocal critic of the American invasion of Iraq and corporations such as ExxonMobil.",
+          "confidence": 0.8,
+          "sources": [
+            "Scott Parkin",
+            "Exxon"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the other corporation that Scott Parkin criticizes?",
+          "answer": "Exxonmobil",
+          "confidence": 1.0,
+          "sources": [
+            "Scott Parkin"
+          ]
+        },
+        {
+          "sub_q": "In how many countries does the other corporation operate?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 5.53,
+      "error": null
+    }
+  },
+  {
+    "id": "5a80840f554299485f59863b",
+    "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+    "gold_answer": "Charmed",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Charmed",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.95,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Charmed",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What supernatural drama series is Rose McGowan known for?",
+        "What role did Rose McGowan play in the movie Jawbreaker?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What supernatural drama series is Rose McGowan known for?",
+          "answer": "Charmed",
+          "confidence": 1.0,
+          "sources": [
+            "Rose McGowan",
+            "Charmed (season 4)"
+          ]
+        },
+        {
+          "sub_q": "What role did Rose McGowan play in the movie Jawbreaker?",
+          "answer": "UNKNOWN",
+          "confidence": 0.1,
+          "sources": [
+            "Jawbreaker (film)"
+          ]
+        }
+      ],
+      "time_sec": 4.64,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8361b65542992ef85e22a0",
+    "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+    "gold_answer": "International Boxing Hall of Fame",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "International Boxing Hall of Fame",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Which organization recognized Vince Phillips' junior welterweight title?",
+        "What larger Hall of Fame is associated with that organization?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Which organization recognized Vince Phillips' junior welterweight title?",
+          "answer": "IBF",
+          "confidence": 1.0,
+          "sources": [
+            "Vince Phillips"
+          ]
+        },
+        {
+          "sub_q": "What larger Hall of Fame is associated with that organization?",
+          "answer": "International Boxing Hall of Fame (IBHOF)",
+          "confidence": 1.0,
+          "sources": [
+            "International Boxing Federation"
+          ]
+        }
+      ],
+      "time_sec": 3.9,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae7ba7a5542993210983f12",
+    "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+    "gold_answer": "Usher",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Usher",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.08,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Usher",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the singer who released the album \"Confessions\"?",
+        "What is the title of the lead single from the album \"Confessions\"?",
+        "Which song was popular for eight consecutive weeks?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the singer who released the album \"Confessions\"?",
+          "answer": "Usher",
+          "confidence": 1.0,
+          "sources": [
+            "Yeah! (Usher song)"
+          ]
+        },
+        {
+          "sub_q": "What is the title of the lead single from the album \"Confessions\"?",
+          "answer": "Yeah!",
+          "confidence": 1.0,
+          "sources": [
+            "Yeah! (Usher song)"
+          ]
+        },
+        {
+          "sub_q": "Which song was popular for eight consecutive weeks?",
+          "answer": "\"Stay\" by Shakespears Sister",
+          "confidence": 1.0,
+          "sources": [
+            "Stay (Shakespears Sister song)"
+          ]
+        }
+      ],
+      "time_sec": 6.04,
+      "error": null
+    }
+  },
+  {
+    "id": "5ac2acff55429921a00ab02b",
+    "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
+    "gold_answer": "Bill Murray",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.95,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who are the guest stars of 'The Hard Easy'?",
+        "Who is the younger brother of each guest star?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who are the guest stars of 'The Hard Easy'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "The Hard Easy (film)"
+          ]
+        },
+        {
+          "sub_q": "Who is the younger brother of each guest star?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 4.37,
+      "error": null
+    }
+  },
+  {
+    "id": "5aba7cfe554299232ef4a2fd",
+    "question": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+    "gold_answer": "Carabao Cup",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.65,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Carabao Cup",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What league cup did Wigan Athletic F.C. compete in during the 2017-18 season?",
+        "What is the sponsorship name of the league cup for the 2017-18 season?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What league cup did Wigan Athletic F.C. compete in during the 2017-18 season?",
+          "answer": "EFL Cup",
+          "confidence": 1.0,
+          "sources": [
+            "2017\u201318 Wigan Athletic F.C. season"
+          ]
+        },
+        {
+          "sub_q": "What is the sponsorship name of the league cup for the 2017-18 season?",
+          "answer": "Carabao Cup",
+          "confidence": 1.0,
+          "sources": [
+            "EFL Cup"
+          ]
+        }
+      ],
+      "time_sec": 6.28,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae5aba0554299546bf82f17",
+    "question": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+    "gold_answer": "Teen Titans Go!",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Teen Titans",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.04,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Raven in Teen Titans Go!",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is Tara Strong's major voice role in animated series?",
+        "What is the name of the American animated television series based on the DC Comics fictional superhero team, the 'Teen Titans'?",
+        "What is the relationship between Tara Strong and the 'Teen Titans' series?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is Tara Strong's major voice role in animated series?",
+          "answer": "Raven in \"Teen Titans\"",
+          "confidence": 1.0,
+          "sources": [
+            "Tara Strong filmography",
+            "Tara Strong",
+            "List of Teen Titans episodes"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the American animated television series based on the DC Comics fictional superhero team, the 'Teen Titans'?",
+          "answer": "Teen Titans Go!",
+          "confidence": 1.0,
+          "sources": [
+            "Teen Titans Go! (TV series)"
+          ]
+        },
+        {
+          "sub_q": "What is the relationship between Tara Strong and the 'Teen Titans' series?",
+          "answer": "Tara Strong is a voice actress who provided voice work for the animated series 'Teen Titans'.",
+          "confidence": 0.9,
+          "sources": [
+            "Tara Strong filmography",
+            "Tara Strong"
+          ]
+        }
+      ],
+      "time_sec": 6.04,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae1f4cb554299234fd0436d",
+    "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+    "gold_answer": "276,170 inhabitants",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "276,170",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.09,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Strasbourg",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.75,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where was the 122nd SS-Standarte formed in 2014?",
+        "What is the name of the city where the 122nd SS-Standarte was formed?",
+        "What is the population or demographic information of that city?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where was the 122nd SS-Standarte formed in 2014?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What is the name of the city where the 122nd SS-Standarte was formed?",
+          "answer": "Strasbourg",
+          "confidence": 1.0,
+          "sources": [
+            "122nd SS-Standarte"
+          ]
+        },
+        {
+          "sub_q": "What is the population or demographic information of that city?",
+          "answer": "In 2014, Strasbourg had 276,170 inhabitants, and its metropolitan area had a population of 773,347 in 2013. The transnational Eurodistrict Strasbourg-Ortenau had a population of 915,000 inhabitants in 2014.",
+          "confidence": 1.0,
+          "sources": [
+            "Strasbourg"
+          ]
+        }
+      ],
+      "time_sec": 5.43,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae7e1fc55429952e35ea9cc",
+    "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+    "gold_answer": "orange",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "orange",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.17,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "orange",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is Oranjegekte and what color clothing is typically worn during this event in the Netherlands?",
+        "What is Koningsdag and what color clothing is typically worn to celebrate this national holiday in the Netherlands?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is Oranjegekte and what color clothing is typically worn during this event in the Netherlands?",
+          "answer": "Oranjegekte is a phenomenon in the Netherlands that occurs during major sporting events and Koningsdag, characterized by the wearing of orange clothing such as T-shirts, caps, and scarfs.",
+          "confidence": 1.0,
+          "sources": [
+            "Oranjegekte"
+          ]
+        },
+        {
+          "sub_q": "What is Koningsdag and what color clothing is typically worn to celebrate this national holiday in the Netherlands?",
+          "answer": "Koningsdag is a national holiday in the Kingdom of the Netherlands celebrated on 27 April, marking the birth of King Willem-Alexander. The color typically worn to celebrate this holiday is orange.",
+          "confidence": 1.0,
+          "sources": [
+            "Koningsdag",
+            "Oranjegekte"
+          ]
+        }
+      ],
+      "time_sec": 5.23,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae37c765542992f92d822d4",
+    "question": "What was the name of the 1996 loose adaptation of William Shakespeare's \"Romeo & Juliet\" written by James Gunn?",
+    "gold_answer": "Tromeo and Juliet",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Tromeo and Juliet",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Tromeo and Juliet",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the loose adaptation of 'Romeo & Juliet' released in 1996?",
+        "Who wrote the 1996 loose adaptation of 'Romeo & Juliet'?",
+        "What is the relationship between the adaptation and William Shakespeare's original work?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the loose adaptation of 'Romeo & Juliet' released in 1996?",
+          "answer": "Tromeo and Juliet",
+          "confidence": 1.0,
+          "sources": [
+            "Tromeo and Juliet"
+          ]
+        },
+        {
+          "sub_q": "Who wrote the 1996 loose adaptation of 'Romeo & Juliet'?",
+          "answer": "James Gunn",
+          "confidence": 0.9,
+          "sources": [
+            "Tromeo and Juliet"
+          ]
+        },
+        {
+          "sub_q": "What is the relationship between the adaptation and William Shakespeare's original work?",
+          "answer": "The adaptations are modernized or reinterpreted versions of William Shakespeare's original tragedy 'Romeo and Juliet'.",
+          "confidence": 0.9,
+          "sources": [
+            "Romeo + Juliet",
+            "The Tragedy of Romeo and Juliet (film)",
+            "Tromeo and Juliet"
+          ]
+        }
+      ],
+      "time_sec": 5.56,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae33c4d5542992f92d82262",
+    "question": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+    "gold_answer": "William Jefferson Clinton",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.31,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Bill Clinton",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Robert Suettinger?",
+        "Who was the Governor of Arkansas during Robert Suettinger's tenure as national intelligence officer?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Robert Suettinger?",
+          "answer": "Robert Suettinger was the national intelligence officer for East Asia at the National Intelligence Council from 1997-1998 and a senior analyst for the Brookings Institution.",
+          "confidence": 1.0,
+          "sources": [
+            "Robert Suettinger"
+          ]
+        },
+        {
+          "sub_q": "Who was the Governor of Arkansas during Robert Suettinger's tenure as national intelligence officer?",
+          "answer": "Bill Clinton",
+          "confidence": 1.0,
+          "sources": [
+            "Robert Suettinger",
+            "Bill Clinton"
+          ]
+        }
+      ],
+      "time_sec": 4.79,
+      "error": null
+    }
+  },
+  {
+    "id": "5a77cb335542997042120b3a",
+    "question": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+    "gold_answer": "John John Florence",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "John John Florence",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.8,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "John John Florence",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the American professional Hawaiian surfer born on 18 October 1992?",
+        "What is the Rip Curl Pro Portugal?",
+        "Did the surfer born on 18 October 1992 win the Rip Curl Pro Portugal?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the American professional Hawaiian surfer born on 18 October 1992?",
+          "answer": "John John Florence",
+          "confidence": 1.0,
+          "sources": [
+            "John John Florence"
+          ]
+        },
+        {
+          "sub_q": "What is the Rip Curl Pro Portugal?",
+          "answer": "The Rip Curl Pro Portugal is a professional surfing competition of the ASP World Tour held every year in October at the Supertubos beach in Peniche, Portugal.",
+          "confidence": 1.0,
+          "sources": [
+            "MEO Rip Curl Pro Portugal"
+          ]
+        },
+        {
+          "sub_q": "Did the surfer born on 18 October 1992 win the Rip Curl Pro Portugal?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 5.39,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8979f4554299669944a52e",
+    "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+    "gold_answer": "Ann",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Ann",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.01,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who plays Bobbi Bacha in Suburban Madness?",
+        "What is the middle name of the actress identified in the first question?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who plays Bobbi Bacha in Suburban Madness?",
+          "answer": "Sela Ward",
+          "confidence": 1.0,
+          "sources": [
+            "Bobbi Bacha",
+            "Suburban Madness"
+          ]
+        },
+        {
+          "sub_q": "What is the middle name of the actress identified in the first question?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Sela Ward",
+            "Bobbi Bacha"
+          ]
+        }
+      ],
+      "time_sec": 3.82,
+      "error": null
+    }
+  },
+  {
+    "id": "5a713ea95542994082a3e6e4",
+    "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+    "gold_answer": "Apalachees",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Ais",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.02,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Ais",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was Alvaro Mexia?",
+        "Which tribe of indigenous people did Alvaro Mexia have a diplomatic mission with?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was Alvaro Mexia?",
+          "answer": "Alvaro Mexia was a 17th-century Spanish explorer and cartographer of the east coast of Florida.",
+          "confidence": 1.0,
+          "sources": [
+            "Alvaro Mexia"
+          ]
+        },
+        {
+          "sub_q": "Which tribe of indigenous people did Alvaro Mexia have a diplomatic mission with?",
+          "answer": "Ais",
+          "confidence": 1.0,
+          "sources": [
+            "Alvaro Mexia"
+          ]
+        }
+      ],
+      "time_sec": 4.49,
+      "error": null
+    }
+  },
+  {
+    "id": "5a78bd9b554299078472774a",
+    "question": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+    "gold_answer": "British",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "British",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.15,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "British",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What was Alfred Gell's nationality?",
+        "What was Edmund Leach's nationality?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What was Alfred Gell's nationality?",
+          "answer": "British",
+          "confidence": 1.0,
+          "sources": [
+            "Alfred Gell"
+          ]
+        },
+        {
+          "sub_q": "What was Edmund Leach's nationality?",
+          "answer": "British",
+          "confidence": 1.0,
+          "sources": [
+            "Edmund Leach"
+          ]
+        }
+      ],
+      "time_sec": 3.85,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7625e8554299109176e66a",
+    "question": "In which year was the King who made the 1925 Birthday Honours born?",
+    "gold_answer": "1865",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.01,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1865",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the King that made the 1925 Birthday Honours?",
+        "In which year was that King born?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the King that made the 1925 Birthday Honours?",
+          "answer": "King George V",
+          "confidence": 1.0,
+          "sources": [
+            "1925 Birthday Honours"
+          ]
+        },
+        {
+          "sub_q": "In which year was that King born?",
+          "answer": "1865",
+          "confidence": 1.0,
+          "sources": [
+            "George V"
+          ]
+        }
+      ],
+      "time_sec": 3.99,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae2dd2055429928c423950d",
+    "question": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+    "gold_answer": "Newport",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.55,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Newport",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What county is East Lempster, New Hampshire located in?",
+        "What is the county seat of that county?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What county is East Lempster, New Hampshire located in?",
+          "answer": "Sullivan County",
+          "confidence": 1.0,
+          "sources": [
+            "East Lempster, New Hampshire",
+            "Lempster, New Hampshire"
+          ]
+        },
+        {
+          "sub_q": "What is the county seat of that county?",
+          "answer": "Newport",
+          "confidence": 1.0,
+          "sources": [
+            "Sullivan County, New Hampshire"
+          ]
+        }
+      ],
+      "time_sec": 4.11,
+      "error": null
+    }
+  },
+  {
+    "id": "5abdf12255429976d4830a2f",
+    "question": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+    "gold_answer": "Bob Seger",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Bob Seger",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.09,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Bob Seger",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.5,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the real name of the rock singer known as Bob Seger?",
+        "What is the stage name of Robert C. Seger?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the real name of the rock singer known as Bob Seger?",
+          "answer": "Robert Clark Seger",
+          "confidence": 1.0,
+          "sources": [
+            "Bob Seger"
+          ]
+        },
+        {
+          "sub_q": "What is the stage name of Robert C. Seger?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Bob Seger"
+          ]
+        }
+      ],
+      "time_sec": 4.07,
+      "error": null
+    }
+  },
+  {
+    "id": "5a88658955429938390d3f47",
+    "question": "Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?",
+    "gold_answer": "Conscription",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "men only",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.89,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "requiring only men to register for the draft",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What was the ruling of Rostker v. Goldberg?",
+        "What practice was being challenged in Rostker v. Goldberg regarding armed forces vacancies?",
+        "What constitutional principles were considered in the decision of Rostker v. Goldberg?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What was the ruling of Rostker v. Goldberg?",
+          "answer": "The Supreme Court held that the practice of requiring only men to register for the draft was constitutional and that the gender distinction was not a violation of the equal protection component of the due process clause.",
+          "confidence": 1.0,
+          "sources": [
+            "Rostker v. Goldberg"
+          ]
+        },
+        {
+          "sub_q": "What practice was being challenged in Rostker v. Goldberg regarding armed forces vacancies?",
+          "answer": "The practice of requiring only men to register for the draft was being challenged.",
+          "confidence": 1.0,
+          "sources": [
+            "Rostker v. Goldberg"
+          ]
+        },
+        {
+          "sub_q": "What constitutional principles were considered in the decision of Rostker v. Goldberg?",
+          "answer": "The decision considered the equal protection component of the due process clause.",
+          "confidence": 1.0,
+          "sources": [
+            "Rostker v. Goldberg"
+          ]
+        }
+      ],
+      "time_sec": 6.01,
+      "error": null
+    }
+  },
+  {
+    "id": "5a86ebac55429960ec39b6d6",
+    "question": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+    "gold_answer": "Mondelez International, Inc.",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Mondelez International",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.1,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Mondelez International",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What are Handi-Snacks?",
+        "Which company produces Handi-Snacks?",
+        "Where is the company that produces Handi-Snacks based?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What are Handi-Snacks?",
+          "answer": "Handi-Snacks are a snack food product line sold by Mondelez International, consisting of a two-compartment package with a small spread compartment and a larger compartment for crackers, including a red plastic spreader.",
+          "confidence": 1.0,
+          "sources": [
+            "Handi-Snacks"
+          ]
+        },
+        {
+          "sub_q": "Which company produces Handi-Snacks?",
+          "answer": "Mondelez International",
+          "confidence": 1.0,
+          "sources": [
+            "Handi-Snacks"
+          ]
+        },
+        {
+          "sub_q": "Where is the company that produces Handi-Snacks based?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Handi-Snacks"
+          ]
+        }
+      ],
+      "time_sec": 5.23,
+      "error": null
+    }
+  },
+  {
+    "id": "5aba5d2e55429901930fa799",
+    "question": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+    "gold_answer": "Monica Lewinsky",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Monica Lewinsky",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.34,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Monica Lewinsky",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the list of women mentioned in the book titled 'Their Lives: The Women Targeted by the Clinton Machine'?",
+        "Who are the former White House interns?",
+        "Which of the women from the book is also listed as a former White House intern?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the list of women mentioned in the book titled 'Their Lives: The Women Targeted by the Clinton Machine'?",
+          "answer": "Monica Lewinsky, Paula Jones, Gennifer Flowers, Kathleen Willey, Elizabeth Gracen, Juanita Broaddrick, and Sally Perdue.",
+          "confidence": 1.0,
+          "sources": [
+            "Their Lives"
+          ]
+        },
+        {
+          "sub_q": "Who are the former White House interns?",
+          "answer": "Monica Lewinsky",
+          "confidence": 1.0,
+          "sources": [
+            "Monica Lewinsky"
+          ]
+        },
+        {
+          "sub_q": "Which of the women from the book is also listed as a former White House intern?",
+          "answer": "Monica Lewinsky",
+          "confidence": 1.0,
+          "sources": [
+            "Their Lives",
+            "Monica Lewinsky"
+          ]
+        }
+      ],
+      "time_sec": 5.45,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae5736e5542990ba0bbb2b3",
+    "question": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+    "gold_answer": "April 1, 1949",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "April 1, 1949",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.0,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1960",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the American lawyer, lobbyist, and political consultant that was a senior member of Donald Trump's presidential campaign?",
+        "What year was this individual born?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the American lawyer, lobbyist, and political consultant that was a senior member of Donald Trump's presidential campaign?",
+          "answer": "Paul Manafort",
+          "confidence": 1.0,
+          "sources": [
+            "Paul Manafort",
+            "Trump campaign\u2013Russian meeting"
+          ]
+        },
+        {
+          "sub_q": "What year was this individual born?",
+          "answer": "1960",
+          "confidence": 1.0,
+          "sources": [
+            "Tony Fabrizio"
+          ]
+        }
+      ],
+      "time_sec": 4.72,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae005b555429942ec259bec",
+    "question": "In what year was the novel that Louren\u00e7o Mutarelli based \"Nina\" on based first published?",
+    "gold_answer": "1866",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.04,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1936",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the title of the novel that Louren\u00e7o Mutarelli based 'Nina' on?",
+        "In what year was that novel first published?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the title of the novel that Louren\u00e7o Mutarelli based 'Nina' on?",
+          "answer": "Crime and Punishment",
+          "confidence": 1.0,
+          "sources": [
+            "Louren\u00e7o Mutarelli"
+          ]
+        },
+        {
+          "sub_q": "In what year was that novel first published?",
+          "answer": "1936",
+          "confidence": 1.0,
+          "sources": [
+            "Three Comrades (novel)"
+          ]
+        }
+      ],
+      "time_sec": 4.43,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7759fc5542993569682d60",
+    "question": "Where are Teide National Park and Garajonay National Park located?",
+    "gold_answer": "Canary Islands, Spain",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "Teide National Park is located in Tenerife, Canary Islands, Spain; Garajonay National Park is located in La Gomera, Canary Islands, Spain.",
+      "exact_match": false,
+      "contains_gold": true,
+      "time_sec": 1.47,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Tenerife, La Gomera",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is Teide National Park located?",
+        "Where is Garajonay National Park located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is Teide National Park located?",
+          "answer": "Tenerife (Canary Islands, Spain)",
+          "confidence": 1.0,
+          "sources": [
+            "Teide National Park"
+          ]
+        },
+        {
+          "sub_q": "Where is Garajonay National Park located?",
+          "answer": "in the center and north of the island of La Gomera, one of the Canary Islands (Spain)",
+          "confidence": 1.0,
+          "sources": [
+            "Garajonay National Park"
+          ]
+        }
+      ],
+      "time_sec": 5.22,
+      "error": null
+    }
+  },
+  {
+    "id": "5a835478554299123d8c20ed",
+    "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+    "gold_answer": "250 million",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the title of Roald Dahl's variation on the popular anecdote?",
+        "How many copies of that specific work by Roald Dahl were sold?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the title of Roald Dahl's variation on the popular anecdote?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "How many copies of that specific work by Roald Dahl were sold?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 4.69,
+      "error": null
+    }
+  },
+  {
+    "id": "5aba749055429901930fa7d8",
+    "question": "What occupation do Chris Menges and Aram Avakian share?",
+    "gold_answer": "director",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "director",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.96,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the occupation of Chris Menges?",
+        "What is the occupation of Aram Avakian?",
+        "Do Chris Menges and Aram Avakian have the same occupation?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the occupation of Chris Menges?",
+          "answer": "Cinematographer and film director",
+          "confidence": 1.0,
+          "sources": [
+            "Chris Menges"
+          ]
+        },
+        {
+          "sub_q": "What is the occupation of Aram Avakian?",
+          "answer": "Film editor and director",
+          "confidence": 1.0,
+          "sources": [
+            "Aram Avakian",
+            "End of the Road (1970 film)"
+          ]
+        },
+        {
+          "sub_q": "Do Chris Menges and Aram Avakian have the same occupation?",
+          "answer": "No",
+          "confidence": 0.9,
+          "sources": [
+            "Chris Menges",
+            "Aram Avakian"
+          ]
+        }
+      ],
+      "time_sec": 6.04,
+      "error": null
+    }
+  },
+  {
+    "id": "5abfb3425542990832d3a1c0",
+    "question": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+    "gold_answer": "The Conversation",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "The Conversation",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.08,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "The Conversation",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": false,
+      "sub_questions": [
+        "Andrew Jaspan was the co-founder of what not-for-profit media outlet?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+          "answer": "The Conversation",
+          "confidence": 1.0,
+          "sources": [
+            "Andrew Jaspan"
+          ]
+        }
+      ],
+      "time_sec": 2.87,
+      "error": null
+    }
+  },
+  {
+    "id": "5ac3165c5542995ef918c10a",
+    "question": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+    "gold_answer": "John Waters",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "John Waters",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.98,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "John Waters",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What were the 18th Independent Spirit Awards?",
+        "In what year did the 18th Independent Spirit Awards take place?",
+        "Who hosted the 18th Independent Spirit Awards?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What were the 18th Independent Spirit Awards?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "In what year did the 18th Independent Spirit Awards take place?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Who hosted the 18th Independent Spirit Awards?",
+          "answer": "John Waters",
+          "confidence": 1.0,
+          "sources": [
+            "18th Independent Spirit Awards"
+          ]
+        }
+      ],
+      "time_sec": 5.21,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae53b545542990ba0bbb23c",
+    "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+    "gold_answer": "Las Vegas Strip in Paradise",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Flamingo Hotel, Las Vegas, Nevada",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.01,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Flamingo Hotel",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the title of Bill Cosby's third album?",
+        "Where was Bill Cosby's third album recorded?",
+        "What hotel and casino is located at the place where Bill Cosby's third album was recorded?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the title of Bill Cosby's third album?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Where was Bill Cosby's third album recorded?",
+          "answer": "Flamingo Hotel in Las Vegas, Nevada",
+          "confidence": 1.0,
+          "sources": [
+            "Why Is There Air?"
+          ]
+        },
+        {
+          "sub_q": "What hotel and casino is located at the place where Bill Cosby's third album was recorded?",
+          "answer": "Flamingo Hotel",
+          "confidence": 1.0,
+          "sources": [
+            "Why Is There Air?"
+          ]
+        }
+      ],
+      "time_sec": 5.1,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae224da554299234fd043ee",
+    "question": "Do the drinks Gibson and Zurracapote both contain gin?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.91,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What are the ingredients of a Gibson drink?",
+        "What are the ingredients of a Zurracapote drink?",
+        "Does the Gibson drink contain gin?",
+        "Does the Zurracapote drink contain gin?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What are the ingredients of a Gibson drink?",
+          "answer": "Gin and vermouth, often garnished with a pickled onion.",
+          "confidence": 1.0,
+          "sources": [
+            "Gibson (cocktail)"
+          ]
+        },
+        {
+          "sub_q": "What are the ingredients of a Zurracapote drink?",
+          "answer": "Red wine, fruit (such as peaches and lemons), sugar, and cinnamon.",
+          "confidence": 1.0,
+          "sources": [
+            "Zurracapote"
+          ]
+        },
+        {
+          "sub_q": "Does the Gibson drink contain gin?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Gibson (cocktail)"
+          ]
+        },
+        {
+          "sub_q": "Does the Zurracapote drink contain gin?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Zurracapote"
+          ]
+        }
+      ],
+      "time_sec": 6.68,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae2b770554299495565db0f",
+    "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+    "gold_answer": "March and April",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "March and April",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.9,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "June",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the annual documentary film festival presented by the fortnightly published British journal of literary essays?",
+        "In what month is this documentary film festival held?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the annual documentary film festival presented by the fortnightly published British journal of literary essays?",
+          "answer": "London International Documentary Festival",
+          "confidence": 1.0,
+          "sources": [
+            "London International Documentary Festival"
+          ]
+        },
+        {
+          "sub_q": "In what month is this documentary film festival held?",
+          "answer": "June",
+          "confidence": 1.0,
+          "sources": [
+            "New Haven Documentary Film Festival"
+          ]
+        }
+      ],
+      "time_sec": 4.08,
+      "error": null
+    }
+  },
+  {
+    "id": "5a80b3a9554299485f5986cc",
+    "question": "Tysons Galleria is located in what county?",
+    "gold_answer": "Fairfax County",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Fairfax County",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.94,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Fairfax County",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": false,
+      "sub_questions": [
+        "Tysons Galleria is located in what county?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Tysons Galleria is located in what county?",
+          "answer": "Fairfax County",
+          "confidence": 0.9,
+          "sources": [
+            "Tysons Galleria",
+            "Tysons, Virginia"
+          ]
+        }
+      ],
+      "time_sec": 2.69,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8e0a005542995085b373a1",
+    "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+    "gold_answer": "IT products and services",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.5,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "IT products and services, including storage systems, servers, workstations and data/voice communications equipment and services.",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What company was Bordan Tkachuk the CEO of?",
+        "What products does that company provide?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What company was Bordan Tkachuk the CEO of?",
+          "answer": "Viglen",
+          "confidence": 1.0,
+          "sources": [
+            "Bordan Tkachuk"
+          ]
+        },
+        {
+          "sub_q": "What products does that company provide?",
+          "answer": "IT products and services, including storage systems, servers, workstations and data/voice communications equipment and services.",
+          "confidence": 1.0,
+          "sources": [
+            "Viglen"
+          ]
+        }
+      ],
+      "time_sec": 4.5,
+      "error": null
+    }
+  },
+  {
+    "id": "5ac1b8ee5542994d76dccedc",
+    "question": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+    "gold_answer": "Levni Yilmaz",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.03,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Lev Yilmaz",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is Lev Yilmaz known for in filmmaking?",
+        "What is Pamela B. Green known for in filmmaking?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is Lev Yilmaz known for in filmmaking?",
+          "answer": "He is best known for his 'Tales of Mere Existence' animated comic series.",
+          "confidence": 1.0,
+          "sources": [
+            "Lev Yilmaz"
+          ]
+        },
+        {
+          "sub_q": "What is Pamela B. Green known for in filmmaking?",
+          "answer": "She is known for her work in feature film titles and motion graphics, and for directing and producing the documentary \"Be Natural: The Untold Story of Alice Guy-Blache.\"",
+          "confidence": 1.0,
+          "sources": [
+            "Pamela B. Green"
+          ]
+        }
+      ],
+      "time_sec": 4.15,
+      "error": null
+    }
+  },
+  {
+    "id": "5adccd795542990d50227d2c",
+    "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+    "gold_answer": "Beijing",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Beijing",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.86,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Beijing",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China?",
+        "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+          "answer": "Beijing",
+          "confidence": 1.0,
+          "sources": [
+            "Moroccan Ambassador to China"
+          ]
+        }
+      ],
+      "time_sec": 4.16,
+      "error": null
+    }
+  },
+  {
+    "id": "5a84c4135542994c784dda31",
+    "question": "Are Yingkou and Fuding the same level of city?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.12,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the administrative level of Yingkou?",
+        "What is the administrative level of Fuding?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the administrative level of Yingkou?",
+          "answer": "prefecture-level city",
+          "confidence": 1.0,
+          "sources": [
+            "Yingkou"
+          ]
+        },
+        {
+          "sub_q": "What is the administrative level of Fuding?",
+          "answer": "county-level city",
+          "confidence": 1.0,
+          "sources": [
+            "Fuding"
+          ]
+        }
+      ],
+      "time_sec": 4.17,
+      "error": null
+    }
+  }
+]
