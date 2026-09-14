@@ -1,0 +1,22 @@
+# Python
+.venv_HopSense/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Env
+.env
+
+# Data (large + not ours to redistribute)
+data/hotpot_sample.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
