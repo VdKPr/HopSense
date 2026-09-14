@@ -1,0 +1,26 @@
+python src\decomposer.py            
+                                                                                                         
+============================================================
+Q: Were Scott Derrickson and Ed Wood of the same nationality?
+============================================================
+Multi-hop: True
+Reasoning: To determine if Scott Derrickson and Ed Wood are of the same nationality, we need to find outthe nationality of each individual first. This requires two separate lookups: one for Scott Derrickson and one for Ed Wood. Therefore, this question is multi-hop as it involves retrieving information about twodifferent people.
+Sub-questions:
+  1. What is the nationality of Scott Derrickson?
+  2. What is the nationality of Ed Wood?
+
+============================================================
+Q: What year was Einstein born?
+============================================================
+Multi-hop: False
+Reasoning: The question is straightforward and asks for a specific fact about Einstein's birth year. It does not require any additional context or multiple steps to retrieve the answer.
+Sub-questions:
+
+============================================================
+Q: Did the CEO of the company that acquired GitHub work at Microsoft before 2010?
+============================================================
+Multi-hop: True
+Reasoning: This question requires multiple retrieval steps because it involves two entities: the CEO of the company that acquired GitHub and their employment history at Microsoft. To answer the main question, we first need to identify the CEO and then check their employment history, which involves two separate pieces of information.
+Sub-questions:
+  1. Who is the CEO of the company that acquired GitHub?
+  2. Did the identified CEO work at Microsoft before 2010?
