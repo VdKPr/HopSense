@@ -1,0 +1,70 @@
+(.venv) PS D:FilePath\HopSense> python src/analyze_results.py
+======================================================================
+Analysis of 100 questions
+======================================================================
+Both correct:       33  (33%)
+HopSense only:      21  (21%)  ← HopSense wins
+Naive only:          7  (7%)  ← Naive wins
+Both wrong:         39  (39%)
+
+
+──────────────────────────────────────────────────────────────────────
+Contains-gold accuracy by HotpotQA question type
+──────────────────────────────────────────────────────────────────────
+  bridge                n= 79  naive=33%  hopsense=52%
+  comparison            n= 21  naive=67%  hopsense=62%
+
+──────────────────────────────────────────────────────────────────────
+HopSense confidence calibration (is high conf = correct?)
+──────────────────────────────────────────────────────────────────────
+  conf [0.00, 0.50)  n= 24  correct=  2  accuracy=8%
+  conf [0.50, 0.70)  n=  6  correct=  3  accuracy=50%
+  conf [0.70, 0.90)  n=  2  correct=  1  accuracy=50%
+  conf [0.90, 1.01)  n= 68  correct= 48  accuracy=71%
+
+──────────────────────────────────────────────────────────────────────
+Sample: Naive wins (naive right, HopSense wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: Are both Dictyosperma, and Huernia described as a genus?
+Gold: yes
+Naive: yes  ✓
+HopSense: no  ✗  (conf=1.00)
+Sub-questions HopSense used:
+    - What is Dictyosperma classified as?
+    - What is Huernia classified as?
+
+Q: Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the NewsMedia under which United States Vice President?
+Gold: Nelson Rockefeller
+Naive: Nelson Rockefeller  ✓
+HopSense: UNKNOWN  ✗  (conf=0.00)
+Sub-questions HopSense used:
+    - Who was the Vice President of the United States during Alfred Balk's tenure as secretary of the Committee on the Employment of Minority Groups in the News Media?
+    - What was the role of Alfred Balk in the Committee on the Employment of Minority Groups in the NewsMedia?
+
+Q: What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?
+Gold: Ann
+Naive: Ann  ✓
+HopSense: UNKNOWN  ✗  (conf=0.00)
+Sub-questions HopSense used:
+    - Who plays Bobbi Bacha in Suburban Madness?
+    - What is the middle name of the actress identified in the previous question?
+
+──────────────────────────────────────────────────────────────────────
+Sample: HopSense wins (HopSense right, Naive wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: Who is older, Annie Morton or Terry Richardson?
+Gold: Terry Richardson
+Naive: UNKNOWN  ✗
+HopSense: Terry Richardson  ✓  (conf=1.00)
+
+Q: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former NewYork Police detective?
+Gold: 1999
+Naive: UNKNOWN  ✗
+HopSense: 1999  ✓  (conf=1.00)
+
+Q: Brown State Fishing Lake is in a country that has a population of how many inhabitants ?
+Gold: 9,984
+Naive: UNKNOWN  ✗
+HopSense: 9,984  ✓  (conf=1.00)
