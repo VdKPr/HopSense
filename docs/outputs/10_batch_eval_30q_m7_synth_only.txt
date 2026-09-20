@@ -1,0 +1,316 @@
+python src/batch_eval.py
+Evaluating 30 questions...
+======================================================================
+
+[1/30] Were Scott Derrickson and Ed Wood of the same nationality?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3459.73it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.91it/s]
+Index built: 10 vectors, dim=384
+    Gold: yes
+    Naive [✓]: yes
+    HopSense [✓]: yes  (conf=1.00)
+
+[2/30] What government position was held by the woman who portrayed Corliss Archer in t...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3298.84it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.08it/s]
+Index built: 10 vectors, dim=384
+    Gold: Chief of Protocol
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of th  (conf=1.00)
+
+[3/30] What science fantasy young adult series, told in first person, has a set of comp...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3508.37it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.54it/s]
+Index built: 10 vectors, dim=384
+    Gold: Animorphs
+    Naive [✓]: Animorphs
+    HopSense [✓]: Animorphs, The Seer And The Sword, The Healer's Keep, The Light Of The Oracle, h  (conf=0.64)
+
+[4/30] Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|█████████████████████████████████████████████| 103/103 [00:00<00:00, 29940.63it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.17it/s]
+Index built: 10 vectors, dim=384
+    Gold: no
+    Naive [✓]: no
+    HopSense [✓]: no  (conf=0.90)
+
+[5/30] The director of the romantic comedy "Big Stone Gap" is based in what New York ci...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1696.66it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.37it/s]
+Index built: 10 vectors, dim=384
+    Gold: Greenwich Village, New York City
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: UNKNOWN  (conf=0.00)
+
+[6/30] 2014 S/S is the debut album of a South Korean boy group that was formed by who?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1571.75it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.87it/s]
+Index built: 10 vectors, dim=384
+    Gold: YG Entertainment
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: UNKNOWN  (conf=0.00)
+
+[7/30] Who was known by his stage name Aladin and helped organizations improve their pe...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1494.28it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.61it/s]
+Index built: 10 vectors, dim=384
+    Gold: Eenasul Fateh
+    Naive [✓]: Eenasul Fateh
+    HopSense [✓]: Eenasul Fateh  (conf=0.00)
+
+[8/30] The arena where the Lewiston Maineiacs played their home games can seat how many...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3455.64it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.97it/s]
+Index built: 10 vectors, dim=384
+    Gold: 3,677 seated
+    Naive [✗]: 3,677
+    HopSense [✗]: 3677  (conf=1.00)
+
+[9/30] Who is older, Annie Morton or Terry Richardson?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1987.06it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.82it/s]
+Index built: 10 vectors, dim=384
+    Gold: Terry Richardson
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: Annie Morton  (conf=0.00)
+
+[10/30] Are Local H and For Against both from the United States?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2000.76it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.70it/s]
+Index built: 10 vectors, dim=384
+    Gold: yes
+    Naive [✓]: yes
+    HopSense [✓]: yes  (conf=1.00)
+
+[11/30] What is the name of the fight song of the university whose main campus is in Law...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2168.59it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.80it/s]
+Index built: 10 vectors, dim=384
+    Gold: Kansas Song
+    Naive [✓]: Kansas Song
+    HopSense [✓]: Kansas Song (We’re From Kansas)  (conf=1.00)
+
+[12/30] What screenwriter with credits for "Evolution" co-wrote a film starring Nicolas ...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1604.11it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.50it/s]
+Index built: 10 vectors, dim=384
+    Gold: David Weissman
+    Naive [✓]: David Weissman
+    HopSense [✗]: The Family Man  (conf=0.00)
+
+[13/30] What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzen...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2355.23it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.32it/s]
+Index built: 10 vectors, dim=384
+    Gold: 1999
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: 1999  (conf=1.00)
+
+[14/30] Are Random House Tower and 888 7th Avenue both used for real estate?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2034.57it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.35it/s]
+Index built: 10 vectors, dim=384
+    Gold: no
+    Naive [✗]: yes
+    HopSense [✗]: yes  (conf=0.90)
+
+[15/30] The football manager who recruited David Beckham managed Manchester United durin...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2465.98it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.14it/s]
+Index built: 10 vectors, dim=384
+    Gold: from 1986 to 2013
+    Naive [✗]: 1986 to 2013
+    HopSense [✗]: 1903–1912  (conf=0.00)
+
+[16/30] Brown State Fishing Lake is in a country that has a population of how many inhab...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2800.73it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.69it/s]
+Index built: 10 vectors, dim=384
+    Gold: 9,984
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: UNKNOWN  (conf=0.00)
+
+[17/30] The Vermont Catamounts men's soccer team currently competes in a conference that...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1930.60it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.87it/s]
+Index built: 10 vectors, dim=384
+    Gold: the North Atlantic Conference
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: North Atlantic Conference  (conf=1.00)
+
+[18/30] Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2040.94it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.76it/s]
+Index built: 10 vectors, dim=384
+    Gold: yes
+    Naive [✓]: yes
+    HopSense [✓]: yes  (conf=1.00)
+
+[19/30] Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs durin...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2972.84it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.84it/s]
+Index built: 10 vectors, dim=384
+    Gold: 1969 until 1974
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: 1969 until 1974  (conf=0.00)
+
+[20/30] Which writer was from England, Henry Roth or Robert Erskine Childers?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2109.37it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.89it/s]
+Index built: 10 vectors, dim=384
+    Gold: Robert Erskine Childers DSC
+    Naive [✗]: yes
+    HopSense [✗]: no  (conf=0.00)
+
+[21/30] Which other Mexican Formula One race car driver has held the podium besides the ...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1932.07it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.54it/s]
+Index built: 10 vectors, dim=384
+    Gold: Pedro Rodríguez
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: Pedro Rodríguez  (conf=0.00)
+
+[22/30] This singer of A Rather Blustery Day also voiced what hedgehog?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1572.50it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.98it/s]
+Index built: 10 vectors, dim=384
+    Gold: Sonic
+    Naive [✗]: Tails
+    HopSense [✗]: Miles "Tails" Prower  (conf=1.00)
+
+[23/30] Aside from the Apple Remote, what other device can control the program Apple Rem...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 2917.83it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.68it/s]
+Index built: 10 vectors, dim=384
+    Gold: keyboard function keys
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: Windows, Mac, Linux, Solaris, Mobile devices, iOS and Android tablets and smartp  (conf=0.90)
+
+[24/30] Which performance act has a higher instrument to person ratio, Badly Drawn Boy o...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1893.75it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.71it/s]
+Index built: 10 vectors, dim=384
+    Gold: Badly Drawn Boy
+    Naive [✗]: UNKNOWN
+    HopSense [✗]: unknown  (conf=0.00)
+
+[25/30] What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 1730.64it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.21it/s]
+Index built: 10 vectors, dim=384
+    Gold: World's Best Goalkeeper
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: Voted the IFFHS World's Best Goalkeeper.  (conf=0.60)
+
+[26/30] Who was the writer of These Boots Are Made for Walkin' and who died in 2007?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 4059.67it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.41it/s]
+Index built: 10 vectors, dim=384
+    Gold: Barton Lee Hazlewood
+    Naive [✗]: Lee Hazlewood
+    HopSense [✗]: Lee Hazlewood, Jim Shoulders  (conf=1.00)
+
+[27/30] The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka S...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3682.60it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.12it/s]
+Index built: 10 vectors, dim=384
+    Gold: 1838
+    Naive [✗]: UNKNOWN
+    HopSense [✓]: 1838  (conf=1.00)
+
+[28/30] Are both Dictyosperma, and Huernia described as a genus?...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3197.35it/s]
+Encoding 2 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 31.54it/s]
+Index built: 2 vectors, dim=384
+    Gold: yes
+    Naive [✓]: yes
+    HopSense [✓]: yes  (conf=1.00)
+
+[29/30] Kaiser Ventures corporation was founded by an American industrialist who became ...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 3556.66it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  9.55it/s]
+Index built: 10 vectors, dim=384
+    Gold: Henry J. Kaiser
+    Naive [✗]: yes
+    HopSense [✗]: Henry John Kaiser  (conf=0.00)
+
+[30/30] What is the name for the adventure in "Tunnels and Trolls", a game designed by K...
+Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+Loading weights: 100%|██████████████████████████████████████████████| 103/103 [00:00<00:00, 4356.77it/s]
+Encoding 10 passages...
+Batches: 100%|████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.31it/s]
+Index built: 10 vectors, dim=384
+    Gold: Arena of Khazan
+    Naive [✓]: Arena of Khazan
+    HopSense [✓]: Arena of Khazan  (conf=1.00)
+
+
+======================================================================
+SUMMARY on 30 questions
+======================================================================
+Multi-hop detected: 29/30 (97%)
+
+                    Exact Match    Contains Gold    Avg Time
+Naive RAG:           10/30 (33%)      10/30 (33%)      1.18s
+HopSense:            12/30 (40%)      16/30 (53%)      8.98s
+
+Results saved to: results/batch_results.json
