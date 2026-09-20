@@ -1,0 +1,52 @@
+======================================================================
+Analysis of 30 questions
+======================================================================
+Both correct:        9  (30%)
+HopSense only:       7  (23%)  ← HopSense wins
+Naive only:          1  (3%)  ← Naive wins
+Both wrong:         13  (43%)
+
+
+──────────────────────────────────────────────────────────────────────
+Contains-gold accuracy by HotpotQA question type
+──────────────────────────────────────────────────────────────────────
+  bridge                n= 22  naive=23%  hopsense=50%
+  comparison            n=  8  naive=62%  hopsense=62%
+
+──────────────────────────────────────────────────────────────────────
+HopSense confidence calibration (is high conf = correct?)
+──────────────────────────────────────────────────────────────────────
+  conf [0.00, 0.50)  n= 12  correct=  3  accuracy=25%
+  conf [0.50, 0.70)  n=  2  correct=  2  accuracy=100%
+  conf [0.90, 1.01)  n= 16  correct= 11  accuracy=69%
+
+──────────────────────────────────────────────────────────────────────
+Sample: Naive wins (naive right, HopSense wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: What screenwriter with credits for "Evolution" co-wrote a film starring Nicolas Cage and Téa Leoni?
+Gold: David Weissman
+Naive: David Weissman  ✓
+HopSense: The Family Man  ✗  (conf=0.00)
+Sub-questions HopSense used:
+    - Who is the screenwriter credited for the film 'Evolution'?
+    - What film starring Nicolas Cage and Téa Leoni was co-written by that screenwriter?
+
+──────────────────────────────────────────────────────────────────────
+Sample: HopSense wins (HopSense right, Naive wrong) — first 3
+──────────────────────────────────────────────────────────────────────
+
+Q: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?
+Gold: Chief of Protocol
+Naive: UNKNOWN  ✗
+HopSense: United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States  ✓  (conf=1.00)
+
+Q: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former NewYork Police detective?
+Gold: 1999
+Naive: UNKNOWN  ✗
+HopSense: 1999  ✓  (conf=1.00)
+
+Q: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?
+Gold: the North Atlantic Conference
+Naive: UNKNOWN  ✗
+HopSense: North Atlantic Conference  ✓  (conf=1.00)
