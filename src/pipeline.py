@@ -62,7 +62,6 @@ class HopSenseResult(BaseModel):
 #     supporting_titles: List[str]
 #     confidence: float
 
-
 # the multi-sample synthesize uses it 
 def _normalize_answer(s: str) -> str:
     """Normalize for consistency comparison."""
