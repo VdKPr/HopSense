@@ -38,6 +38,110 @@ class HopSenseResult(BaseModel):
 
 
 # ============ Sub-question answering ============
+
+# ============ Sub-question answering with self-consistency ============
+# ## to M7 below, modify answer_sub_question to sample N times and compute consistency-based confidence
+# SUBQ_PROMPT = """Answer the sub-question using ONLY the passages below.
+# If the passages don't contain the answer, say "UNKNOWN".
+
+# Passages:
+# {passages}
+
+# Sub-question: {sub_question}
+
+# Return:
+# - answer: short factual answer (or "UNKNOWN"). Give ONLY the atomic 
+#   answer — a name, date, number, or short phrase. No explanation.
+# - supporting_titles: list of passage titles that support your answer
+# - confidence: 0.0 to 1.0 based on how clearly the passages answer this"""
+
+
+# class SubAnswerSample(BaseModel):
+#     """One sampled answer for a sub-question (used for self-consistency)."""
+#     answer: str
+#     supporting_titles: List[str]
+#     confidence: float
+
+
+# the multi-sample synthesize uses it 
+def _normalize_answer(s: str) -> str:
+    """Normalize for consistency comparison."""
+    import re, string
+    s = s.lower().strip()
+    s = re.sub(r'\b(a|an|the)\b', ' ', s)
+    s = ''.join(ch for ch in s if ch not in string.punctuation)
+    s = ' '.join(s.split())
+    return s
+
+
+# def answer_sub_question(sub_q: str, passages: List[Passage],
+#                         n_samples: int = 5,
+#                         temperature: float = 0.7) -> HopAnswer:
+#     """
+#     Sample answer n_samples times at temperature > 0.
+#     Confidence = fraction of samples that agree with the modal answer.
+#     Also averages self-reported confidence for comparison.
+#     """
+#     from collections import Counter
+    
+#     llm = ChatOpenAI(model="gpt-4o-mini", temperature=temperature)
+#     llm_structured = llm.with_structured_output(SubAnswerSample)
+    
+#     passages_text = "\n\n".join(
+#         f"[{p.title}]\n{p.text}" for p in passages
+#     )
+    
+#     prompt = ChatPromptTemplate.from_template(SUBQ_PROMPT)
+#     chain = prompt | llm_structured
+    
+#     # Sample n_samples times
+#     samples: List[SubAnswerSample] = []
+#     for _ in range(n_samples):
+#         try:
+#             s = chain.invoke({"passages": passages_text, "sub_question": sub_q})
+#             samples.append(s)
+#         except Exception:
+#             # Skip failed samples but keep going
+#             continue
+    
+#     if not samples:
+#         # Total failure — return low-confidence UNKNOWN
+#         return HopAnswer(
+#             sub_question=sub_q,
+#             answer="UNKNOWN",
+#             supporting_titles=[],
+#             confidence=0.0,
+#         )
+    
+#     # Find the modal answer (most common normalized answer)
+#     normalized_to_original = {}
+#     for s in samples:
+#         key = _normalize_answer(s.answer)
+#         if key not in normalized_to_original:
+#             normalized_to_original[key] = s.answer
+    
+#     counter = Counter(_normalize_answer(s.answer) for s in samples)
+#     modal_norm, modal_count = counter.most_common(1)[0]
+#     modal_answer = normalized_to_original[modal_norm]
+    
+#     # Self-consistency confidence: fraction that agree with modal
+#     consistency_conf = modal_count / len(samples)
+    
+#     # Pick supporting_titles from a sample that matched the modal answer
+#     supporting = []
+#     for s in samples:
+#         if _normalize_answer(s.answer) == modal_norm:
+#             supporting = s.supporting_titles
+#             break
+    
+#     return HopAnswer(
+#         sub_question=sub_q,
+#         answer=modal_answer,
+#         supporting_titles=supporting,
+#         confidence=consistency_conf,
+#     )
+
+# form M7 above, modify answer_sub_question to sample N times and compute consistency-based confidence
 SUBQ_PROMPT = """Answer the sub-question using ONLY the passages below.
 If the passages don't contain the answer, say "UNKNOWN".
 
@@ -112,22 +216,82 @@ class Synthesis(BaseModel):
     final_answer: str
     overall_confidence: float
 
-
-def synthesize(original_q: str, hop_answers: List[HopAnswer]) -> Synthesis:
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+def synthesize(original_q: str, hop_answers: List[HopAnswer],
+               n_samples: int = 5,
+               temperature: float = 0.7) -> Synthesis:
+    """
+    Sample final synthesis n_samples times.
+    Overall confidence = min(hop confidences) * synthesis consistency.
+    """
+    from collections import Counter
+    
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=temperature)
     llm_structured = llm.with_structured_output(Synthesis)
     
     hop_summary = "\n".join(
-        f"- Q: {h.sub_question}\n  A: {h.answer} (confidence: {h.confidence:.2f})"
+        f"- Q: {h.sub_question}\n  A: {h.answer}"
         for h in hop_answers
     )
     
     prompt = ChatPromptTemplate.from_template(SYNTHESIS_PROMPT)
     chain = prompt | llm_structured
-    return chain.invoke({
-        "original_question": original_q,
-        "hop_summary": hop_summary,
-    })
+    
+    samples: List[Synthesis] = []
+    for _ in range(n_samples):
+        try:
+            samples.append(chain.invoke({
+                "original_question": original_q,
+                "hop_summary": hop_summary,
+            }))
+        except Exception:
+            continue
+    
+    if not samples:
+        return Synthesis(final_answer="UNKNOWN", overall_confidence=0.0)
+    
+    # Modal final answer
+    normalized_to_original = {}
+    for s in samples:
+        key = _normalize_answer(s.final_answer)
+        if key not in normalized_to_original:
+            normalized_to_original[key] = s.final_answer
+    
+    counter = Counter(_normalize_answer(s.final_answer) for s in samples)
+    modal_norm, modal_count = counter.most_common(1)[0]
+    modal_answer = normalized_to_original[modal_norm]
+    
+    synthesis_consistency = modal_count / len(samples)
+    
+    # Propagate: overall = min(hop_confidences) * synthesis_consistency
+    # Weakest link + synthesis agreement
+    if hop_answers:
+        hop_conf_floor = min(h.confidence for h in hop_answers)
+    else:
+        hop_conf_floor = 1.0
+    
+    overall = hop_conf_floor * synthesis_consistency
+    
+    return Synthesis(
+        final_answer=modal_answer,
+        overall_confidence=overall,
+    )
+
+# M7: Update the synthesizer to also use self-consistency for the final answer.
+# def synthesize(original_q: str, hop_answers: List[HopAnswer]) -> Synthesis:
+#     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+#     llm_structured = llm.with_structured_output(Synthesis)
+    
+#     hop_summary = "\n".join(
+#         f"- Q: {h.sub_question}\n  A: {h.answer} (confidence: {h.confidence:.2f})"
+#         for h in hop_answers
+#     )
+    
+#     prompt = ChatPromptTemplate.from_template(SYNTHESIS_PROMPT)
+#     chain = prompt | llm_structured
+#     return chain.invoke({
+#         "original_question": original_q,
+#         "hop_summary": hop_summary,
+#     })
 
 
 # ============ Full pipeline ============
