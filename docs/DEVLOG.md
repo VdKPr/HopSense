@@ -191,3 +191,55 @@ this class of failure. Some multi-hop errors look architectural —
 independent decomposition can't cleanly handle genuinely sequential 
 questions.
 
+---
+
+## Milestone 7: Synthesis-only self-consistency for calibration — PARTIAL FIX
+
+**Hypothesis:** Sampling the synthesizer N times at temperature > 0 
+and using modal agreement as confidence will fix the calibration bug 
+from Problem 07.2 (68% accuracy at "high confidence" ≥ 0.9).
+
+**Change:** Modified `synthesize` in `src/pipeline.py` to sample N=5 
+final syntheses at temperature=0.7. Confidence formula: 
+`min(hop_confidence) × (modal_count / N)`. Kept `answer_sub_question` 
+as single-shot (M5 baseline) to isolate the effect of synthesis-only 
+self-consistency and to keep cost at ~2.5× baseline.
+
+**Result on 30 questions:**
+
+| | M5 (100q baseline) | M7 (30q synth-only) |
+|---|---|---|
+| HopSense contains-gold | 58% | 53% |
+| Fraction at conf ≥ 0.9 | 72% | 53% |
+| Accuracy at conf ≥ 0.9 | 68% | 69% |
+| Avg time | 4.8s | 9.0s |
+
+Fewer questions now land in "high confidence" — good. But the ones 
+that do are still wrong at the same rate — bad. The calibration bug 
+was not in the synthesis stage, so sampling there could not detect it.
+
+**Outputs:**
+- [`outputs/10_batch_eval_30q_m7_synth_only.txt`](outputs/10_batch_eval_30q_m7_synth_only.txt)
+- [`outputs/11_analysis_30q_m7_synth_only.txt`](outputs/11_analysis_30q_m7_synth_only.txt)
+- Raw JSON: [`results/batch_results_30q_m7_synth_only.json`](../results/batch_results_30q_m7_synth_only.json)
+- Full analysis: [`problems/11.1_m7_synth_consistency_partial_fix.md`](problems/11.1_m7_synth_consistency_partial_fix.md)
+
+**Decision:** Keep the M7 change (partial improvement in how many 
+questions get high confidence, at reasonable cost). Do NOT roll back. 
+Escalate to M8: apply a cheaper alternative first — retrieval-score-
+based confidence — before adding sub-answer self-consistency (which 
+would 5× baseline cost).
+
+**Takeaway:** Consistency detects failure only when the failing stage 
+is the one being sampled. When sub-answers are wrong-but-consistent, 
+downstream self-consistency has nothing to detect. Debugging calibration 
+means finding WHICH stage owns the failure, not layering sampling on 
+every stage by reflex.
+
+## Next milestones
+- [x] **M7:** Synthesis-only self-consistency — partial fix, kept
+- [ ] **M8:** Retrieval-score-based confidence (cheapest calibration lever)
+- [ ] **M9:** If M8 insufficient, sub-answer self-consistency
+- [ ] **M10:** EvalArena Phase 1 — F1, recall@k, MRR, faithfulness metrics
+- [ ] **M11:** EvalArena Phase 2 — LLM-as-judge for hallucination
+- [ ] **M12:** Swap OpenAI → Llama 3 8B via Ollama, benchmark tradeoff
