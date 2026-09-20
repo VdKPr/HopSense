@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "5a8b57f25542995d1e6f1371",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 3.18,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the nationality of Scott Derrickson?",
+        "What is the nationality of Ed Wood?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the nationality of Scott Derrickson?",
+          "answer": "American",
+          "confidence": 1.0,
+          "sources": [
+            "Scott Derrickson"
+          ]
+        },
+        {
+          "sub_q": "What is the nationality of Ed Wood?",
+          "answer": "American",
+          "confidence": 1.0,
+          "sources": [
+            "Ed Wood"
+          ]
+        }
+      ],
+      "time_sec": 8.33,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8c7595554299585d9e36b6",
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "gold_answer": "Chief of Protocol",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.19,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who portrayed Corliss Archer in the film Kiss and Tell?",
+        "What government position did that actress hold?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who portrayed Corliss Archer in the film Kiss and Tell?",
+          "answer": "Shirley Temple",
+          "confidence": 1.0,
+          "sources": [
+            "Kiss and Tell (1945 film)"
+          ]
+        },
+        {
+          "sub_q": "What government position did that actress hold?",
+          "answer": "United States ambassador to Ghana and to Czechoslovakia, Chief of Protocol of the United States",
+          "confidence": 1.0,
+          "sources": [
+            "Shirley Temple"
+          ]
+        }
+      ],
+      "time_sec": 10.02,
+      "error": null
+    }
+  },
+  {
+    "id": "5a85ea095542994775f606a8",
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "gold_answer": "Animorphs",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Animorphs",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.86,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Animorphs, The Seer And The Sword, The Healer's Keep, The Light Of The Oracle, horror, war, dehumanization, morality, freedom",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 0.6400000000000001,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the science fantasy young adult series told in first person?",
+        "What are the titles of the companion books related to the series?",
+        "What themes do the companion books explore regarding enslaved worlds and alien species?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the science fantasy young adult series told in first person?",
+          "answer": "Animorphs",
+          "confidence": 1.0,
+          "sources": [
+            "Animorphs"
+          ]
+        },
+        {
+          "sub_q": "What are the titles of the companion books related to the series?",
+          "answer": "The Seer And The Sword, The Healer's Keep, The Light Of The Oracle",
+          "confidence": 1.0,
+          "sources": [
+            "Victoria Hanley"
+          ]
+        },
+        {
+          "sub_q": "What themes do the companion books explore regarding enslaved worlds and alien species?",
+          "answer": "The themes explored include horror, war, dehumanization, morality, and freedom, particularly in the context of the Hork-Bajir being enslaved by the Yeerks.",
+          "confidence": 0.8,
+          "sources": [
+            "The Hork-Bajir Chronicles",
+            "Animorphs"
+          ]
+        }
+      ],
+      "time_sec": 11.35,
+      "error": null
+    }
+  },
+  {
+    "id": "5adbf0a255429947ff17385a",
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.0,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the neighborhood of the Laleli Mosque?",
+        "What is the neighborhood of the Esma Sultan Mansion?",
+        "Do the neighborhoods of the Laleli Mosque and Esma Sultan Mansion match?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the neighborhood of the Laleli Mosque?",
+          "answer": "Fatih",
+          "confidence": 1.0,
+          "sources": [
+            "Laleli Mosque"
+          ]
+        },
+        {
+          "sub_q": "What is the neighborhood of the Esma Sultan Mansion?",
+          "answer": "Ortak\u00f6y",
+          "confidence": 1.0,
+          "sources": [
+            "Esma Sultan Mansion"
+          ]
+        },
+        {
+          "sub_q": "Do the neighborhoods of the Laleli Mosque and Esma Sultan Mansion match?",
+          "answer": "No, they do not match.",
+          "confidence": 0.9,
+          "sources": [
+            "Esma Sultan Mansion",
+            "Laleli Mosque"
+          ]
+        }
+      ],
+      "time_sec": 9.73,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8e3ea95542995a26add48d",
+    "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+    "gold_answer": "Greenwich Village, New York City",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.88,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the director of the romantic comedy 'Big Stone Gap'?",
+        "In which New York city is the director of 'Big Stone Gap' based?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the director of the romantic comedy 'Big Stone Gap'?",
+          "answer": "Adriana Trigiani",
+          "confidence": 1.0,
+          "sources": [
+            "Big Stone Gap (film)"
+          ]
+        },
+        {
+          "sub_q": "In which New York city is the director of 'Big Stone Gap' based?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 8.03,
+      "error": null
+    }
+  },
+  {
+    "id": "5abd94525542992ac4f382d2",
+    "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+    "gold_answer": "YG Entertainment",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.19,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the South Korean boy group that released the album '2014 S/S'?",
+        "Who formed the South Korean boy group that released the album '2014 S/S'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the South Korean boy group that released the album '2014 S/S'?",
+          "answer": "WINNER",
+          "confidence": 1.0,
+          "sources": [
+            "2014 S/S"
+          ]
+        },
+        {
+          "sub_q": "Who formed the South Korean boy group that released the album '2014 S/S'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "2014 S/S"
+          ]
+        }
+      ],
+      "time_sec": 8.94,
+      "error": null
+    }
+  },
+  {
+    "id": "5a85b2d95542997b5ce40028",
+    "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+    "gold_answer": "Eenasul Fateh",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Eenasul Fateh",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.97,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Eenasul Fateh",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the real name of the person known by the stage name Aladin?",
+        "What was the role of Aladin as a consultant?",
+        "What organizations did Aladin help improve their performance?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the real name of the person known by the stage name Aladin?",
+          "answer": "Eenasul Fateh",
+          "confidence": 1.0,
+          "sources": [
+            "Eenasul Fateh"
+          ]
+        },
+        {
+          "sub_q": "What was the role of Aladin as a consultant?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Eenasul Fateh",
+            "Management consulting"
+          ]
+        },
+        {
+          "sub_q": "What organizations did Aladin help improve their performance?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Eenasul Fateh"
+          ]
+        }
+      ],
+      "time_sec": 9.48,
+      "error": null
+    }
+  },
+  {
+    "id": "5a87ab905542996e4f3088c1",
+    "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+    "gold_answer": "3,677 seated",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "3,677",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.14,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "3677",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": false,
+      "sub_questions": [
+        "The arena where the Lewiston Maineiacs played their home games can seat how many people?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+          "answer": "3,677 seated",
+          "confidence": 1.0,
+          "sources": [
+            "Androscoggin Bank Colis\u00e9e"
+          ]
+        }
+      ],
+      "time_sec": 6.77,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7bbb64554299042af8f7cc",
+    "question": "Who is older, Annie Morton or Terry Richardson?",
+    "gold_answer": "Terry Richardson",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.5,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Annie Morton",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the birth year of Annie Morton?",
+        "What is the birth year of Terry Richardson?",
+        "Which birth year is earlier?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the birth year of Annie Morton?",
+          "answer": "1970",
+          "confidence": 1.0,
+          "sources": [
+            "Annie Morton"
+          ]
+        },
+        {
+          "sub_q": "What is the birth year of Terry Richardson?",
+          "answer": "1965",
+          "confidence": 1.0,
+          "sources": [
+            "Terry Richardson"
+          ]
+        },
+        {
+          "sub_q": "Which birth year is earlier?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 11.02,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8db19d5542994ba4e3dd00",
+    "question": "Are Local H and For Against both from the United States?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.11,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Where is Local H from?",
+        "Where is For Against from?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Where is Local H from?",
+          "answer": "Zion, Illinois",
+          "confidence": 1.0,
+          "sources": [
+            "Local H"
+          ]
+        },
+        {
+          "sub_q": "Where is For Against from?",
+          "answer": "Lincoln, Nebraska",
+          "confidence": 1.0,
+          "sources": [
+            "For Against"
+          ]
+        }
+      ],
+      "time_sec": 7.99,
+      "error": null
+    }
+  },
+  {
+    "id": "5a7166395542994082a3e814",
+    "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+    "gold_answer": "Kansas Song",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Kansas Song",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.94,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Kansas Song (We\u2019re From Kansas)",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the name of the university whose main campus is in Lawrence, Kansas?",
+        "What is the name of the fight song of that university?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the name of the university whose main campus is in Lawrence, Kansas?",
+          "answer": "University of Kansas",
+          "confidence": 1.0,
+          "sources": [
+            "University of Kansas"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the fight song of that university?",
+          "answer": "Kansas Song (We\u2019re From Kansas)",
+          "confidence": 1.0,
+          "sources": [
+            "Kansas Song",
+            "University of Kansas"
+          ]
+        }
+      ],
+      "time_sec": 8.03,
+      "error": null
+    }
+  },
+  {
+    "id": "5a877e5d5542993e715abf7d",
+    "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+    "gold_answer": "David Weissman",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "David Weissman",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.85,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "The Family Man",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the screenwriter credited for the film 'Evolution'?",
+        "What film starring Nicolas Cage and T\u00e9a Leoni was co-written by that screenwriter?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the screenwriter credited for the film 'Evolution'?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "What film starring Nicolas Cage and T\u00e9a Leoni was co-written by that screenwriter?",
+          "answer": "The Family Man",
+          "confidence": 1.0,
+          "sources": [
+            "The Family Man"
+          ]
+        }
+      ],
+      "time_sec": 8.38,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab3b0bf5542992ade7c6e39",
+    "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+    "gold_answer": "1999",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1999",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What movie starring Arnold Schwarzenegger features him as a former New York Police detective?",
+        "What year did Guns N Roses perform a promo for that movie?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What movie starring Arnold Schwarzenegger features him as a former New York Police detective?",
+          "answer": "End of Days",
+          "confidence": 1.0,
+          "sources": [
+            "End of Days (film)"
+          ]
+        },
+        {
+          "sub_q": "What year did Guns N Roses perform a promo for that movie?",
+          "answer": "1999",
+          "confidence": 1.0,
+          "sources": [
+            "Oh My God (Guns N' Roses song)"
+          ]
+        }
+      ],
+      "time_sec": 8.91,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab56e32554299637185c594",
+    "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+    "gold_answer": "no",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.82,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the purpose of Random House Tower?",
+        "What is the purpose of 888 7th Avenue?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the purpose of Random House Tower?",
+          "answer": "The purpose of Random House Tower is to serve as the headquarters of book publisher Random House and as a luxury apartment complex.",
+          "confidence": 1.0,
+          "sources": [
+            "Random House Tower"
+          ]
+        },
+        {
+          "sub_q": "What is the purpose of 888 7th Avenue?",
+          "answer": "Office skyscraper and corporate headquarters for Vornado Realty Trust.",
+          "confidence": 0.9,
+          "sources": [
+            "888 7th Avenue"
+          ]
+        }
+      ],
+      "time_sec": 8.29,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab6d09255429954757d337d",
+    "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+    "gold_answer": "from 1986 to 2013",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "1986 to 2013",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 2.18,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1903\u20131912",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the football manager that recruited David Beckham?",
+        "During what years did that manager manage Manchester United?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the football manager that recruited David Beckham?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "During what years did that manager manage Manchester United?",
+          "answer": "1903\u20131912",
+          "confidence": 1.0,
+          "sources": [
+            "Ernest Mangnall"
+          ]
+        }
+      ],
+      "time_sec": 9.32,
+      "error": null
+    }
+  },
+  {
+    "id": "5a75e05c55429976ec32bc5f",
+    "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+    "gold_answer": "9,984",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.99,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "In which country is Brown State Fishing Lake located?",
+        "What is the population of the country where Brown State Fishing Lake is located?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "In which country is Brown State Fishing Lake located?",
+          "answer": "United States",
+          "confidence": 1.0,
+          "sources": [
+            "Brown State Fishing Lake"
+          ]
+        },
+        {
+          "sub_q": "What is the population of the country where Brown State Fishing Lake is located?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Brown State Fishing Lake"
+          ]
+        }
+      ],
+      "time_sec": 10.45,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab3e45655429976abd1bcd4",
+    "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+    "gold_answer": "the North Atlantic Conference",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "North Atlantic Conference",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the current name of the conference that the Vermont Catamounts men's soccer team competes in?",
+        "What was the name of that conference from 1988 to 1996?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the current name of the conference that the Vermont Catamounts men's soccer team competes in?",
+          "answer": "America East Conference",
+          "confidence": 1.0,
+          "sources": [
+            "Vermont Catamounts men's soccer"
+          ]
+        },
+        {
+          "sub_q": "What was the name of that conference from 1988 to 1996?",
+          "answer": "North Atlantic Conference",
+          "confidence": 1.0,
+          "sources": [
+            "America East Conference"
+          ]
+        }
+      ],
+      "time_sec": 10.44,
+      "error": null
+    }
+  },
+  {
+    "id": "5ab29c24554299449642c932",
+    "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.0,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Giuseppe Verdi an opera composer?",
+        "Is Ambroise Thomas an opera composer?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Giuseppe Verdi an opera composer?",
+          "answer": "Yes, Giuseppe Verdi was an Italian opera composer.",
+          "confidence": 1.0,
+          "sources": [
+            "Giuseppe Verdi"
+          ]
+        },
+        {
+          "sub_q": "Is Ambroise Thomas an opera composer?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Ambroise Thomas"
+          ]
+        }
+      ],
+      "time_sec": 8.64,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae0d4c9554299603e418468",
+    "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+    "gold_answer": "1969 until 1974",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.17,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1969 until 1974",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who was the president during Roger O. Egeberg's term as Assistant Secretary for Health and Scientific Affairs?",
+        "What were the years of the president's administration identified in the first question?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who was the president during Roger O. Egeberg's term as Assistant Secretary for Health and Scientific Affairs?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Roger O. Egeberg"
+          ]
+        },
+        {
+          "sub_q": "What were the years of the president's administration identified in the first question?",
+          "answer": "1969 until 1974",
+          "confidence": 1.0,
+          "sources": [
+            "Richard Nixon"
+          ]
+        }
+      ],
+      "time_sec": 9.31,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8133725542995ce29dcbdb",
+    "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+    "gold_answer": "Robert Erskine Childers DSC",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.33,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "no",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the nationality of Henry Roth?",
+        "What is the nationality of Robert Erskine Childers?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the nationality of Henry Roth?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Henry Roth"
+          ]
+        },
+        {
+          "sub_q": "What is the nationality of Robert Erskine Childers?",
+          "answer": "Irish",
+          "confidence": 1.0,
+          "sources": [
+            "Erskine Barton Childers",
+            "Robert Caesar Childers",
+            "Robert Barton"
+          ]
+        }
+      ],
+      "time_sec": 8.59,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae7a8175542993210983ed8",
+    "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "gold_answer": "Pedro Rodr\u00edguez",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.05,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Pedro Rodr\u00edguez",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the Force India driver born in 1990?",
+        "Which Mexican Formula One drivers have held a podium position?",
+        "Has the identified driver from the first question held a podium position?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the Force India driver born in 1990?",
+          "answer": "Sergio P\u00e9rez",
+          "confidence": 1.0,
+          "sources": [
+            "Sergio P\u00e9rez"
+          ]
+        },
+        {
+          "sub_q": "Which Mexican Formula One drivers have held a podium position?",
+          "answer": "Pedro Rodr\u00edguez and Sergio P\u00e9rez",
+          "confidence": 0.9,
+          "sources": [
+            "Formula One drivers from Mexico"
+          ]
+        },
+        {
+          "sub_q": "Has the identified driver from the first question held a podium position?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        }
+      ],
+      "time_sec": 8.13,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae6050f55429929b0807a5e",
+    "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+    "gold_answer": "Sonic",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Tails",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.98,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Miles \"Tails\" Prower",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is the singer of 'A Rather Blustery Day'?",
+        "What hedgehog character did that singer voice?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is the singer of 'A Rather Blustery Day'?",
+          "answer": "Jim Cummings",
+          "confidence": 1.0,
+          "sources": [
+            "A Rather Blustery Day"
+          ]
+        },
+        {
+          "sub_q": "What hedgehog character did that singer voice?",
+          "answer": "Miles \"Tails\" Prower",
+          "confidence": 1.0,
+          "sources": [
+            "Kate Higgins"
+          ]
+        }
+      ],
+      "time_sec": 7.97,
+      "error": null
+    }
+  },
+  {
+    "id": "5adddccd5542997dc7907069",
+    "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+    "gold_answer": "keyboard function keys",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.02,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Windows, Mac, Linux, Solaris, Mobile devices, iOS and Android tablets and smartphones, ChromeOS clients",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.9,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What program was the Apple Remote originally designed to interact with?",
+        "What other devices can control the program identified in the first question?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What program was the Apple Remote originally designed to interact with?",
+          "answer": "Front Row media program",
+          "confidence": 1.0,
+          "sources": [
+            "Apple Remote"
+          ]
+        },
+        {
+          "sub_q": "What other devices can control the program identified in the first question?",
+          "answer": "Windows, Mac, Linux, Solaris, Mobile devices, iOS and Android tablets and smartphones, ChromeOS clients.",
+          "confidence": 0.9,
+          "sources": [
+            "NetSupport Manager"
+          ]
+        }
+      ],
+      "time_sec": 8.98,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae2070a5542994d89d5b313",
+    "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+    "gold_answer": "Badly Drawn Boy",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.73,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "unknown",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is the number of instruments used by Badly Drawn Boy in their performances?",
+        "How many members are in Badly Drawn Boy's performance act?",
+        "What is the number of instruments used by Wolf Alice in their performances?",
+        "How many members are in Wolf Alice's performance act?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is the number of instruments used by Badly Drawn Boy in their performances?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "How many members are in Badly Drawn Boy's performance act?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": [
+            "Badly Drawn Boy",
+            "Badly Drawn Boy discography",
+            "About a Boy (soundtrack)"
+          ]
+        },
+        {
+          "sub_q": "What is the number of instruments used by Wolf Alice in their performances?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "How many members are in Wolf Alice's performance act?",
+          "answer": "4",
+          "confidence": 1.0,
+          "sources": [
+            "Wolf Alice"
+          ]
+        }
+      ],
+      "time_sec": 10.03,
+      "error": null
+    }
+  },
+  {
+    "id": "5ae22b8d554299234fd0440f",
+    "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+    "gold_answer": "World's Best Goalkeeper",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.82,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Voted the IFFHS World's Best Goalkeeper.",
+      "exact_match": false,
+      "contains_gold": true,
+      "confidence": 0.6,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who is Kasper Schmeichel's father?",
+        "What award or recognition did the IFFHS give in 1992?",
+        "What was Kasper Schmeichel's father's achievement or title according to the IFFHS in 1992?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who is Kasper Schmeichel's father?",
+          "answer": "Peter Schmeichel",
+          "confidence": 1.0,
+          "sources": [
+            "Kasper Schmeichel"
+          ]
+        },
+        {
+          "sub_q": "What award or recognition did the IFFHS give in 1992?",
+          "answer": "IFFHS World's Best Goalkeeper",
+          "confidence": 1.0,
+          "sources": [
+            "IFFHS World's Best Goalkeeper",
+            "Peter Schmeichel"
+          ]
+        },
+        {
+          "sub_q": "What was Kasper Schmeichel's father's achievement or title according to the IFFHS in 1992?",
+          "answer": "Voted the IFFHS World's Best Goalkeeper.",
+          "confidence": 1.0,
+          "sources": [
+            "Peter Schmeichel"
+          ]
+        }
+      ],
+      "time_sec": 10.07,
+      "error": null
+    }
+  },
+  {
+    "id": "5a722b8655429971e9dc9329",
+    "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+    "gold_answer": "Barton Lee Hazlewood",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Lee Hazlewood",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 0.93,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Lee Hazlewood, Jim Shoulders",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who wrote the song 'These Boots Are Made for Walkin'?",
+        "Which notable person died in 2007?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who wrote the song 'These Boots Are Made for Walkin'?",
+          "answer": "Lee Hazlewood",
+          "confidence": 1.0,
+          "sources": [
+            "These Boots Are Made for Walkin'"
+          ]
+        },
+        {
+          "sub_q": "Which notable person died in 2007?",
+          "answer": "Jim Shoulders",
+          "confidence": 1.0,
+          "sources": [
+            "Jim Shoulders"
+          ]
+        }
+      ],
+      "time_sec": 7.58,
+      "error": null
+    }
+  },
+  {
+    "id": "5adf37a95542995ec70e8f97",
+    "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+    "gold_answer": "1838",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "UNKNOWN",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.7,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "1838",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What year was Virginia Commonwealth University founded?",
+        "Who was the head coach of the 2011\u201312 VCU Rams men's basketball team?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What year was Virginia Commonwealth University founded?",
+          "answer": "1838",
+          "confidence": 1.0,
+          "sources": [
+            "Virginia Commonwealth University"
+          ]
+        },
+        {
+          "sub_q": "Who was the head coach of the 2011\u201312 VCU Rams men's basketball team?",
+          "answer": "Shaka Smart",
+          "confidence": 1.0,
+          "sources": [
+            "2011\u201312 VCU Rams men's basketball team"
+          ]
+        }
+      ],
+      "time_sec": 8.4,
+      "error": null
+    }
+  },
+  {
+    "id": "5abd259d55429924427fcf1a",
+    "question": "Are both Dictyosperma, and Huernia described as a genus?",
+    "gold_answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 0.99,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "yes",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Is Dictyosperma classified as a genus?",
+        "Is Huernia classified as a genus?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Is Dictyosperma classified as a genus?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Dictyosperma"
+          ]
+        },
+        {
+          "sub_q": "Is Huernia classified as a genus?",
+          "answer": "Yes",
+          "confidence": 1.0,
+          "sources": [
+            "Huernia"
+          ]
+        }
+      ],
+      "time_sec": 7.06,
+      "error": null
+    }
+  },
+  {
+    "id": "5a828c8355429966c78a6a50",
+    "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+    "gold_answer": "Henry J. Kaiser",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "yes",
+      "exact_match": false,
+      "contains_gold": false,
+      "time_sec": 1.08,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Henry John Kaiser",
+      "exact_match": false,
+      "contains_gold": false,
+      "confidence": 0.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "Who founded Kaiser Ventures corporation?",
+        "Who is known as the father of modern American shipbuilding?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "Who founded Kaiser Ventures corporation?",
+          "answer": "UNKNOWN",
+          "confidence": 0.0,
+          "sources": []
+        },
+        {
+          "sub_q": "Who is known as the father of modern American shipbuilding?",
+          "answer": "Henry John Kaiser",
+          "confidence": 1.0,
+          "sources": [
+            "Henry J. Kaiser"
+          ]
+        }
+      ],
+      "time_sec": 7.92,
+      "error": null
+    }
+  },
+  {
+    "id": "5a8a3e745542996c9b8d5e70",
+    "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+    "gold_answer": "Arena of Khazan",
+    "type": "bridge",
+    "level": "hard",
+    "naive": {
+      "answer": "Arena of Khazan",
+      "exact_match": true,
+      "contains_gold": true,
+      "time_sec": 1.08,
+      "error": null
+    },
+    "hopsense": {
+      "answer": "Arena of Khazan",
+      "exact_match": true,
+      "contains_gold": true,
+      "confidence": 1.0,
+      "is_multi_hop": true,
+      "sub_questions": [
+        "What is 'Tunnels and Trolls'?",
+        "Who is Ken St. Andre?",
+        "What is the name of the adventure in 'Tunnels and Trolls'?"
+      ],
+      "per_hop": [
+        {
+          "sub_q": "What is 'Tunnels and Trolls'?",
+          "answer": "Tunnels & Trolls (abbreviated 'T&T') is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.",
+          "confidence": 1.0,
+          "sources": [
+            "Tunnels &amp; Trolls"
+          ]
+        },
+        {
+          "sub_q": "Who is Ken St. Andre?",
+          "answer": "Kenneth Eugene St. Andre is an American fantasy author and game designer, best known for his work with \"Tunnels & Trolls\" and \"Wasteland\".",
+          "confidence": 1.0,
+          "sources": [
+            "Ken St. Andre"
+          ]
+        },
+        {
+          "sub_q": "What is the name of the adventure in 'Tunnels and Trolls'?",
+          "answer": "Arena of Khazan",
+          "confidence": 1.0,
+          "sources": [
+            "Arena of Khazan"
+          ]
+        }
+      ],
+      "time_sec": 11.16,
+      "error": null
+    }
+  }
+]
